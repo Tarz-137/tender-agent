@@ -1,0 +1,11 @@
+{
+  "portal": "New Delhi",
+  "tender_id": "2026_DJB_299121_4",
+  "status": "failed",
+  "documents": {
+    "Tendernotice_1.pdf": {
+      "status": "failed",
+      "error": "Response is not a valid document (possibly CAPTCHA/HTML or incomplete download)"
+    }
+  }
+}

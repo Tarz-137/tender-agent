@@ -1,0 +1,62 @@
+SHEET Summary
+A4: 1 | B4: Name of Work
+A5: 2 | B5: Tender Number 
+A6: 3 | B6: Published Date
+A7: 4 | B7: Due Date
+A8: 5 | B8: Opening Date
+A9: 6 | B9: Department 
+A10: 7 | B10: Location
+A11: 8 | B11: Tender Value
+A12: 9 | B12: EMD
+A13: 10 | B13: Tender Fee
+A14: 11 | B14: Processing Fee
+A15: 12 | B15: Payment Modes: - 
+1. EMD.
+2. Tender Fee
+A16: 13 | B16: Performance Security
+A17: 14 | B17: Additional BG
+A18: 15 | B18: Joint Venture
+A19: 16 | B19: Pre Bid Meeting Date
+A20: 17 | B20: Pre Bid Address
+A21: 18 | B21: Contact Person
+A22: 19 | B22: Mob
+A23: 20 | B23: Email ID
+A24: 21 | B24: Makes
+A25: 22 | B25: Type of fountain
+A26: 23 | B26: Payment Terms
+A27: 24 | B27: Selection Criteria
+A28: 25 | B28: Rate Quote 
+A29: 26 | B29: Period of Completion
+A30: 27 | B30: O&M Period
+A31: 28 | B31: Hard copy of Technical Proposal
+A32: 29 | B32: RFP Submission
+A33: 30 | B33: Registration
+A34: 31 | B34: License
+A35: 32 | B35: GST in Particular State
+SHEET Key Words
+B1: Musical Fountain
+B2: Fountain
+B3: Multimedia Show
+B4: Water Screen Show
+B5: Water Fountains
+B6: Dancing Fountain
+B7: Multimedia Laser and Video Show
+B8: Water Body Fountains
+B9: Sound and Light Show
+B10: Static Fountain
+B11: Aqua Screen 
+B12: Projection Mapping
+B13: Dynamic Fountain
+B14: Laminar Fountain
+B15:  Beautification Talab | C15: Ghat | D15: Pond | E15: Lake | F15: River
+B16: Upgradation Talab
+B17: Recreational Talab
+SHEET PQ
+B2: 1. Evaluation Criteria
+B3: 2. Eligibility of Bidders
+B4: 3. Basic Eligibility Criteria
+B5: 4. Pre Qualification Criteria
+B6: 5. Eligibility Criteria
+B7: 6. Technical Criteria
+B8: 7. Selection Criteria
+B9: 8. Evaluation Criteria

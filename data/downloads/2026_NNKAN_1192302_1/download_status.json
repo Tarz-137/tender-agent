@@ -1,0 +1,11 @@
+{
+  "portal": "Uttar Pradesh",
+  "tender_id": "2026_NNKAN_1192302_1",
+  "status": "failed",
+  "documents": {
+    "Tendernotice_1.pdf": {
+      "status": "failed",
+      "error": "Response is not a valid document (possibly CAPTCHA/HTML or incomplete download)"
+    }
+  }
+}

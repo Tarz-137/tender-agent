@@ -1,0 +1,29 @@
+SHEET BoQ1
+A1: Item Rate BoQ 
+A2: BoQ_Ver4.0 | B2: Item Rate | C2: Normal | D2: INR Only | E2: INR
+A3: Select, Excess (+), Less (-) | C3: Less (-)
+A4: Tender Inviting Authority: Managing Director,TTDC
+A5: Name of Work: RFP for Selection of Concessionaire for Design, Supply, Install, Test & Commission Innovative and Immersive 3D Projection Mapping shows at Ooty Lake and Yercaud
+Lake (Package-I) with Operations & Maintenance for a period of IO years on PPP basis
+A6: Contract No:  NO:2740-A/ENGG/2022
+A7:  
+A8: Name of the Bidder/ Bidding Firm / Company :
+A9: PRICE SCHEDULE
+(This BOQ template must not be modified/replaced by the bidder and the same should be uploaded after filling the relevent columns, else the bidder is liable to be rejected for this tender. Bidders are allowed to enter the Bidder Name and Values only)
+A10: NUMBER # | B10: TEXT # | C10: TEXT # | D10: NUMBER # | E10: TEXT # | F10: NUMBER | G10: NUMBER | H10: TEXT | I10: TEXT # | J10: NUMBER # | K10: TEXT# | L10: TEXT # | M10: NUMBER # | N10: NUMBER | O10: NUMBER | P10: NUMBER | Q10: NUMBER | R10: TEXT | S10: TEXT | T10: NUMBER | U10: NUMBER | V10: NUMBER | W10: NUMBER | X10: TEXT | Y10: TEXT | Z10: NUMBER | AA10: NUMBER | AB10: NUMBER | AC10: NUMBER | AD10: TEXT | AE10: TEXT | AF10: NUMBER | AG10: NUMBER | AH10: NUMBER | AI10: NUMBER | AJ10: TEXT | AK10: TEXT | AL10: NUMBER | AM10: NUMBER | AN10: NUMBER | AO10: NUMBER | AP10: TEXT | AQ10: TEXT | AR10: NUMBER | AS10: NUMBER | AT10: NUMBER # | AU10: NUMBER # | AV10: TEXT | AW10: TEXT | AX10: NUMBER # | AY10: NUMBER # | AZ10: DATE | BA10: NUMBER # | BB10: NUMBER # | BC10: TEXT #
+A11: Sl.
+No. | B11: Item Description | C11: Item Code / Make | D11: Quantity | E11: Units | F11: Base Revenue (%) | I11: Addition / Deduction | J11: Addition / Deduction Values | K11: Currency Convertion against each Item | L11: Quoted Currency in INR / Other Currency | M11: Percentage of Gross Revenue
+Share in % to be entered by the
+Bidder
+(which includes the Base Revenue
+Share of 25%) | N11: Excise Duty | O11: VAT | P11: Freight Charges ( Unloading & Stacking) | Q11: Any Other Taxes/Duties/Levies | T11: Other Taxes 2 | U11: IIIrd Party i.e DGS&D / RITES etc Inspection Charges @0.34%+Service Tax | V11: Less for Cenvat Credit,if any respect of Supplies Under full Excise Duty Category  | BA11: TOTAL Percentage of Gross Revenue
+Share to Authority | BB11: TOTAL AMOUNT  With Taxes | BC11: TOTAL AMOUNT 
+In Words
+A12: 1.0 | B12: 2.0 | C12: 3.0 | D12: 4.0 | E12: 5.0 | F12: 6.0 | G12: 7.0 | H12: 8.0 | I12: 9.0 | J12: 10.0 | K12: 11.0 | L12: 12.0 | M12: 13.0 | N12: 14.0 | O12: 15.0 | P12: 16.0 | Q12: 17.0 | R12: 18.0 | S12: 19.0 | T12: 20.0 | U12: 21.0 | V12: 22.0 | W12: 23.0 | X12: 24.0 | Y12: 25.0 | Z12: 26.0 | AA12: 27.0 | AB12: 28.0 | AC12: 29.0 | AD12: 30.0 | AE12: 31.0 | AF12: 32.0 | AG12: 33.0 | AH12: 34.0 | AI12: 35.0 | AJ12: 36.0 | AK12: 37.0 | AL12: 38.0 | AM12: 39.0 | AN12: 40.0 | AO12: 41.0 | AP12: 42.0 | AQ12: 43.0 | AR12: 44.0 | AS12: 45.0 | AT12: 46.0 | AU12: 47.0 | AV12: 48.0 | AW12: 49.0 | AX12: 50.0 | AY12: 51.0 | AZ12: 52.0 | BA12: 53.0 | BB12: 54.0 | BC12: 55.0
+A13: 1.0 | B13: Gross Revenue Share | C13: itemH1 | IE13: 1.0 | IF13: Construction of chamber for 100mm sluices valve | IG13: item1 | IH13: 10.0 | II13: 1 Nos
+A14: 1.01 | B14: Gross revenue share to the Authority (Excluding GST) | C14: itemH1Code1 | D14: 1.0 | E14: Percentage (% of Gross revenue) | F14: 25.0 | I14: Excess(+) | J14: 1.0 | K14: Full Conversion | L14: INR | BA14: 0.0 | BB14: 0.0 | BC14: INR Zero Only | IE14: 1.01 | IF14: Supplying, Conveying and fixing spls. Including eart | IG14: item1 | IH14: 123.223 | II14: Nos
+A15: Total in Figures | BA15: 0.0 | BB15: 0.0 | BC15: INR Zero Only | IE15: 4.0 | IF15: Construction of chamber for 100mm sluice plates | IG15: item5 | IH15: 10.0 | II15: Nos
+A16: Quoted Rate in Figures | E16: Select | BA16: 0.0 | BB16: 0.0 | BC16:  Zero Only
+A17: Quoted Rate in Words | C17: INR Zero Only
+SHEET Macros
+E6: Please Enable Macros to View BoQ information

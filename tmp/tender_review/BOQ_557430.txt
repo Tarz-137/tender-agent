@@ -1,0 +1,125 @@
+SHEET BoQ1
+A1: Item Rate BoQ 
+A2: BoQ_Ver4.0 | B2: Item Rate | C2: Normal | D2: INR Only | E2: INR
+A3: Select, Excess (+), Less (-) | C3: Less (-)
+A4: Tender Inviting Authority: M.C. Karnal
+A5: Name of Work:Providing and Fixing Musical Fountain with Defect Liability period of three years at Meera Ghati Park, under Municipal Corporation Karnal   
+A6: Contract No:  
+A7:  
+A8: Name of the Bidder/ Bidding Firm / Company :
+A9: PRICE SCHEDULE
+(This BOQ template must not be modified/replaced by the bidder and the same should be uploaded after filling the relevent columns, else the bidder is liable to be rejected for this tender. Bidders are allowed to enter the Bidder Name and Values only)
+A10: NUMBER # | B10: TEXT # | C10: TEXT # | D10: NUMBER # | E10: TEXT # | F10: NUMBER | G10: NUMBER | H10: TEXT | I10: TEXT # | J10: NUMBER # | K10: TEXT# | L10: TEXT # | M10: NUMBER # | N10: NUMBER | O10: NUMBER | P10: NUMBER | Q10: NUMBER | R10: TEXT | S10: TEXT | T10: NUMBER | U10: NUMBER | V10: NUMBER | W10: NUMBER | X10: TEXT | Y10: TEXT | Z10: NUMBER | AA10: NUMBER | AB10: NUMBER | AC10: NUMBER | AD10: TEXT | AE10: TEXT | AF10: NUMBER | AG10: NUMBER | AH10: NUMBER | AI10: NUMBER | AJ10: TEXT | AK10: TEXT | AL10: NUMBER | AM10: NUMBER | AN10: NUMBER | AO10: NUMBER | AP10: TEXT | AQ10: TEXT | AR10: NUMBER | AS10: NUMBER | AT10: NUMBER # | AU10: NUMBER # | AV10: TEXT | AW10: TEXT | AX10: NUMBER # | AY10: NUMBER # | AZ10: DATE | BA10: NUMBER # | BB10: NUMBER # | BC10: TEXT #
+A11: Sl.
+No. | B11: Item Description | C11: Item Code / Make | D11: Quantity | E11: Units | F11: Estimated Rate | I11: Addition / Deduction | J11: Addition / Deduction Values | K11: Currency Convertion against each Item | L11: Quoted Currency in INR / Other Currency | M11: RATE In Figures To be entered by the Bidder 
+Rs.      P
+  | N11: Excise Duty | O11: VAT | P11: Freight Charges ( Unloading & Stacking) | Q11: Any Other Taxes/Duties/Levies | T11: Other Taxes 2 | U11: IIIrd Party i.e DGS&D / RITES etc Inspection Charges @0.34%+Service Tax | V11: Less for Cenvat Credit,if any respect of Supplies Under full Excise Duty Category  | BA11: TOTAL AMOUNT  | BB11: TOTAL AMOUNT  With Taxes | BC11: TOTAL AMOUNT 
+In Words
+A12: 1.0 | B12: 2.0 | C12: 3.0 | D12: 4.0 | E12: 5.0 | F12: 6.0 | G12: 7.0 | H12: 8.0 | I12: 9.0 | J12: 10.0 | K12: 11.0 | L12: 12.0 | M12: 13.0 | N12: 14.0 | O12: 15.0 | P12: 16.0 | Q12: 17.0 | R12: 18.0 | S12: 19.0 | T12: 20.0 | U12: 21.0 | V12: 22.0 | W12: 23.0 | X12: 24.0 | Y12: 25.0 | Z12: 26.0 | AA12: 27.0 | AB12: 28.0 | AC12: 29.0 | AD12: 30.0 | AE12: 31.0 | AF12: 32.0 | AG12: 33.0 | AH12: 34.0 | AI12: 35.0 | AJ12: 36.0 | AK12: 37.0 | AL12: 38.0 | AM12: 39.0 | AN12: 40.0 | AO12: 41.0 | AP12: 42.0 | AQ12: 43.0 | AR12: 44.0 | AS12: 45.0 | AT12: 46.0 | AU12: 47.0 | AV12: 48.0 | AW12: 49.0 | AX12: 50.0 | AY12: 51.0 | AZ12: 52.0 | BA12: 53.0 | BB12: 54.0 | BC12: 55.0
+A13: 1.0 | B13: Supply, Installation, Testing and Commissioning of Arching Jets DN50, SS 304/Brass, having 50 mm inlet dia and 20 mm outlet dia with spray high up to 6 meter, which shall be used as a arching jet. Make/ Brand:- Reliable Decor BSI/ Ripple/ VCS/ Canara/ Oasis/ Wet  | D13: 4.0 | E13: Each | F13: 0.0 | I13: Excess(+) | J13: 1.0 | K13: Full Conversion | L13: INR | BA13: 0.0 | BB13: 0.0 | BC13: INR Zero Only | IE13: 1.01 | IF13: Supplying, Conveying and fixing spls. Including eart | IG13: item1 | IH13: 123.223 | II13: Nos
+A14: 2.0 | B14: Supply, Installation, Testing and Commissioning of Chasing Jets DN25, SS 304/Brass, having 25 mm inlet dia and 10 mm outlet dia with spray high up to 6 meter, which shall be used as a chasing jet. Make/ Brand:- Reliable Decor BSI/ Ripple/ VCS/ Canara/ Oasis/ Wet  | D14: 72.0 | E14: Each | F14: 0.0 | I14: Excess(+) | J14: 1.0 | K14: Full Conversion | L14: INR | BA14: 0.0 | BB14: 0.0 | BC14: INR Zero Only | IE14: 1.01 | IF14: Supplying, Conveying and fixing spls. Including eart | IG14: item1 | IH14: 123.223 | II14: Nos
+A15: 3.0 | B15: Supply, Installation, Testing and Commissioning of Revolving Jets DN25, SS 304/Brass, Effect Height 3-4 Mt
+Make/ Brand:- Reliable Decor BSI/ Ripple/ VCS/ Canara/ Oasis/ Wet  | D15: 4.0 | E15: Each | F15: 0.0 | I15: Excess(+) | J15: 1.0 | K15: Full Conversion | L15: INR | BA15: 0.0 | BB15: 0.0 | BC15: INR Zero Only | IE15: 1.02 | IF15: Construction of chamber for 100mm sluice plates | IG15: item2 | IH15: 213.0 | II15: Nos
+A16: 4.0 | B16: Supply, Installation, Testing and Commissioning of Bubbler Jets DN40, SS 304/Brass, Effect Height 0.5-1 Mtr
+Make/ Brand:- Reliable Decor BSI/ Ripple/ VCS/ Canara/ Oasis/ Wet  | D16: 10.0 | E16: Each | F16: 0.0 | I16: Excess(+) | J16: 1.0 | K16: Full Conversion | L16: INR | BA16: 0.0 | BB16: 0.0 | BC16: INR Zero Only | IE16: 2.0 | IF16: Construction of chamber for 100mm sluices valve | IG16: item3 | IH16: 10.0 | II16: Nos
+A17: 5.0 | B17: Supply, Installation, Testing and Commissioning of Under water Colour change LED light 36W with DMX Control to highlight the jets suitable for 24V. supply 1M flexible cable with cable gland, Body SS 304 Grade, IP68.
+Make/ Brand:- Crompton/ Kirloskar/ KSB | D17: 96.0 | E17: Each | F17: 0.0 | I17: Excess(+) | J17: 1.0 | K17: Full Conversion | L17: INR | BA17: 0.0 | BB17: 0.0 | BC17: INR Zero Only | IE17: 3.0 | IF17: Supplying, Conveying and fixing spls. Including ea | IG17: item4 | IH17: 10.0 | II17: Nos
+A18: 6.0 | B18: Supply, Installation, Testing and Commissioning of Horizontal Submersible Pumping set with C.I.volute, CI Impeller and SS Shaft with mechanical seal, connected to a TEFC induction motor suitable for 400/400 volts, 3 Phase 50 cycles A.C. Supply, 2900 rpm, Pump 2HP
+Make/ Brand:- Crompton/ Kirloskar/ KSB | D18: 1.0 | E18: Each | F18: 0.0 | I18: Excess(+) | J18: 1.0 | K18: Full Conversion | L18: INR | BA18: 0.0 | BB18: 0.0 | BC18: INR Zero Only | IE18: 1.01 | IF18: Supplying, Conveying and fixing spls. Including eart | IG18: item1 | IH18: 123.223 | II18: Nos
+A19: 7.0 | B19: Supply, Installation, Testing and Commissioning of Horizontal Submersible Pumping set with C.I.volute, CI Impeller and SS Shaft with mechanical seal, connected to a TEFC induction motor suitable for 400/400 volts, 3 Phase 50 cycles A.C. Supply, 2900 rpm, Pump 1.5HP.ion
+Make/ Brand:- Crompton/ Kirloskar/ KSB | D19: 10.0 | E19: Each | F19: 0.0 | I19: Excess(+) | J19: 1.0 | K19: Full Conversion | L19: INR | BA19: 0.0 | BB19: 0.0 | BC19: INR Zero Only | IE19: 1.01 | IF19: Supplying, Conveying and fixing spls. Including eart | IG19: item1 | IH19: 123.223 | II19: Nos
+A20: 8.0 | B20: Supply, Installation, Testing and Commissioning of Horizontal Submersible Pumping set with C.I.volute, CI Impeller and SS Shaft with mechanical seal, connected to a TEFC induction motor suitable for 400/400 volts, 3 Phase 50 cycles A.C. Supply, 2900 rpm, Pump 1HP
+Make/ Brand:- Crompton/ Kirloskar/ KSB | D20: 5.0 | E20: Each | F20: 0.0 | I20: Excess(+) | J20: 1.0 | K20: Full Conversion | L20: INR | BA20: 0.0 | BB20: 0.0 | BC20: INR Zero Only | IE20: 1.02 | IF20: Construction of chamber for 100mm sluice plates | IG20: item2 | IH20: 213.0 | II20: Nos
+A21: 9.0 | B21: Supply, Installation, Testing and Commissioning of SS Support for Jets 
+Make/ Brand:- Reliable Decor BSI/ Ripple/ VCS | D21: 9.0 | E21: Each | F21: 0.0 | I21: Excess(+) | J21: 1.0 | K21: Full Conversion | L21: INR | BA21: 0.0 | BB21: 0.0 | BC21: INR Zero Only | IE21: 2.0 | IF21: Construction of chamber for 100mm sluices valve | IG21: item3 | IH21: 10.0 | II21: Nos
+A22: 10.0 | B22: Supply, Installation, Testing and Commissioning of 4 channel amplfier, Low-Z/Hi-Z selectable mode for each channel, 3000W on each channel, Bridgable channels, Onboard signal processing, THD: (0.35%, Frequency Response (20 Hz - 20 kHz):  plus /- 0.25 dB, Damping Factor: )1000, Dual input (network and analog)
+Make/ Brand:- JBL/Bose/Ahuja | D22: 1.0 | E22: Each | F22: 0.0 | I22: Excess(+) | J22: 1.0 | K22: Full Conversion | L22: INR | BA22: 0.0 | BB22: 0.0 | BC22: INR Zero Only | IE22: 3.0 | IF22: Supplying, Conveying and fixing spls. Including ea | IG22: item4 | IH22: 10.0 | II22: Nos
+A23: 11.0 | B23: Supply, Installation, Testing and Commissioning of 6 Channel Low-cost High-Performance Mixer 2 configurable auxiliary buses: 3-band EQ with a swept mid on mono inputs: RCA phono stereo playback inputs and record outputs: Ten-segment LED output metering: rack mountable
+Make/ Brand:- JBL/Bose/Ahuja | D23: 1.0 | E23: Each | F23: 0.0 | I23: Excess(+) | J23: 1.0 | K23: Full Conversion | L23: INR | BA23: 0.0 | BB23: 0.0 | BC23: INR Zero Only | IE23: 1.01 | IF23: Supplying, Conveying and fixing spls. Including eart | IG23: item1 | IH23: 123.223 | II23: Nos
+A24: 12.0 | B24: Supply, Installation, Testing and Commissioning of Rack 9U - For Sound System
+Make/ Brand:- Customized | D24: 1.0 | E24: Each | F24: 0.0 | I24: Excess(+) | J24: 1.0 | K24: Full Conversion | L24: INR | BA24: 0.0 | BB24: 0.0 | BC24: INR Zero Only | IE24: 1.02 | IF24: Construction of chamber for 100mm sluice plates | IG24: item2 | IH24: 213.0 | II24: Nos
+A25: 13.0 | B25: Supply, Installation, Testing and Commissioning of
+Speaker Cable 2 Core 2.5 Sq.mm
+Make/ Brand:- Polycab/Crystal / Equivalent | D25: 508.0 | E25: Metre | F25: 0.0 | I25: Excess(+) | J25: 1.0 | K25: Full Conversion | L25: INR | BA25: 0.0 | BB25: 0.0 | BC25: INR Zero Only | IE25: 2.0 | IF25: Construction of chamber for 100mm sluices valve | IG25: item3 | IH25: 10.0 | II25: Nos
+A26: 14.0 | B26: Supply, Installation, Testing and Commissioning of
+Speaker Enclosure
+Make/ Brand:- Customized | D26: 8.0 | E26: Each | F26: 0.0 | I26: Excess(+) | J26: 1.0 | K26: Full Conversion | L26: INR | BA26: 0.0 | BB26: 0.0 | BC26: INR Zero Only | IE26: 3.0 | IF26: Supplying, Conveying and fixing spls. Including ea | IG26: item4 | IH26: 10.0 | II26: Nos
+A27: 15.0 | B27: Supply, Installation, Testing and Commissioning of
+Show Controller V-Nano with PC
+Make/ Brand:- Syncronorm/Wet/Oasis | D27: 1.0 | E27: Each | F27: 0.0 | I27: Excess(+) | J27: 1.0 | K27: Full Conversion | L27: INR | BA27: 0.0 | BB27: 0.0 | BC27: INR Zero Only | IE27: 1.01 | IF27: Supplying, Conveying and fixing spls. Including eart | IG27: item1 | IH27: 123.223 | II27: Nos
+A28: 16.0 | B28: Supply, Installation, Testing and Commissioning of 5 pieces of original score music suitable for the
+fountain of approx 2 min each
+Make/ Brand:- Reliable Décor BSI/ Ripple/ VCS/Canara/Oasis/Wet | D28: 1.0 | E28: Each | F28: 0.0 | I28: Excess(+) | J28: 1.0 | K28: Full Conversion | L28: INR | BA28: 0.0 | BB28: 0.0 | BC28: INR Zero Only | IE28: 1.01 | IF28: Supplying, Conveying and fixing spls. Including eart | IG28: item1 | IH28: 123.223 | II28: Nos
+A29: 17.0 | B29: Supply, Installation, Testing and Commissioning of
+Electrical Main Distribution Panel of cubical type
+wall/floor mounted, 16 guage weather proof
+powder coated double door body IP-65 for
+recirculation pump in coming MCB’, Relay,
+Contactor, Ammeter, Voltmeter, Single phase
+priventer, push button, TPN MCB`s, SP, MCB base,Farul, connector, indiating lights, Thimbols, wiring of panel etc
+Make/ Brand:- Reliable Décor BSI/ Ripple/ VCS/Canara/Oasis/Wet | D29: 1.0 | E29: Each | F29: 0.0 | I29: Excess(+) | J29: 1.0 | K29: Full Conversion | L29: INR | BA29: 0.0 | BB29: 0.0 | BC29: INR Zero Only | IE29: 1.02 | IF29: Construction of chamber for 100mm sluice plates | IG29: item2 | IH29: 213.0 | II29: Nos
+A30: 18.0 | B30: Supply, Installation, Testing and Commissioning of
+Electrical Main Distribution Panel of cubical type
+wall/floor mounted, 16 guage weather proof
+powder coated double door body IP-65 for
+recirculation pump in coming MCB’, Relay,
+Contactor, Ammeter, Voltmeter, Single phase
+priventer, push button, TPN MCB`s, SP, MCB base, Farul, connector, indiating lights, Thimbols, wiring of panel etc
+Make/ Brand:- Reliable Décor BSI/ Ripple/ VCS/Canara/Oasis/Wet | D30: 2.0 | E30: Each | F30: 0.0 | I30: Excess(+) | J30: 1.0 | K30: Full Conversion | L30: INR | BA30: 0.0 | BB30: 0.0 | BC30: INR Zero Only | IE30: 2.0 | IF30: Construction of chamber for 100mm sluices valve | IG30: item3 | IH30: 10.0 | II30: Nos
+A31: 19.0 | B31: Supply, Installation, Testing and Commissioning of
+Electrical Lights and Solenid volves Panel of cubical type wall/floor mounted, 16 guage weather proof powder coated double door body IP-65 for recirculation pump in coming MCB’, Relay, Contactor, Ammeter, Voltmeter, Single phase priventer, push button, TPN MCB`s, SP, MCB base, Farul, connector, indiating lights, Thimbols, wiring of panel etc
+Make/ Brand:- Reliable Décor BSI/ Ripple/ VCS/Canara/Oasis/Wet | D31: 2.0 | E31: Each | F31: 0.0 | I31: Excess(+) | J31: 1.0 | K31: Full Conversion | L31: INR | BA31: 0.0 | BB31: 0.0 | BC31: INR Zero Only | IE31: 3.0 | IF31: Supplying, Conveying and fixing spls. Including ea | IG31: item4 | IH31: 10.0 | II31: Nos
+A32: 20.0 | B32: Supply, Installation, Testing and Commissioning of SS Pipe 25mm SS 304 (Sch. 40)
+Make/ Brand:- Jindal/tata/jsw/Sail | D32: 25.0 | E32: Metre | F32: 0.0 | I32: Excess(+) | J32: 1.0 | K32: Full Conversion | L32: INR | BA32: 0.0 | BB32: 0.0 | BC32: INR Zero Only | IE32: 1.01 | IF32: Supplying, Conveying and fixing spls. Including eart | IG32: item1 | IH32: 123.223 | II32: Nos
+A33: 21.0 | B33: Supply, Installation, Testing and Commissioning of SS Pipe 40mm SS 304 (Sch. 40) 
+Make/ Brand:- Jindal/tata/jsw/Sail | D33: 30.0 | E33: Metre | F33: 0.0 | I33: Excess(+) | J33: 1.0 | K33: Full Conversion | L33: INR | BA33: 0.0 | BB33: 0.0 | BC33: INR Zero Only | IE33: 1.02 | IF33: Construction of chamber for 100mm sluice plates | IG33: item2 | IH33: 213.0 | II33: Nos
+A34: 22.0 | B34: Supply, Installation, Testing and Commissioning of SS Pipe 50mm SS 304 (Sch. 40)
+Make/ Brand:- Jindal/tata/jsw/Sail | D34: 15.0 | E34: Metre | F34: 0.0 | I34: Excess(+) | J34: 1.0 | K34: Full Conversion | L34: INR | BA34: 0.0 | BB34: 0.0 | BC34: INR Zero Only | IE34: 2.0 | IF34: Construction of chamber for 100mm sluices valve | IG34: item3 | IH34: 10.0 | II34: Nos
+A35: 23.0 | B35: Supply, Installation, Testing and Commissioning of SS Pipe 65mm Header/Ring SS 304 (Sch. 40)
+Make/ Brand:- Jindal/tata/jsw/Sail | D35: 41.0 | E35: Metre | F35: 0.0 | I35: Excess(+) | J35: 1.0 | K35: Full Conversion | L35: INR | BA35: 0.0 | BB35: 0.0 | BC35: INR Zero Only | IE35: 3.0 | IF35: Supplying, Conveying and fixing spls. Including ea | IG35: item4 | IH35: 10.0 | II35: Nos
+A36: 24.0 | B36: Supply, Installation, Testing and Commissioning of
+Bronze Ball Valve (Screwed) 25mm 
+Make/ Brand:- hm/zoloto/reliable/Uivalent | D36: 76.0 | E36: Each | F36: 0.0 | I36: Excess(+) | J36: 1.0 | K36: Full Conversion | L36: INR | BA36: 0.0 | BB36: 0.0 | BC36: INR Zero Only | IE36: 1.01 | IF36: Supplying, Conveying and fixing spls. Including eart | IG36: item1 | IH36: 123.223 | II36: Nos
+A37: 25.0 | B37: Supply, Installation, Testing and Commissioning of
+Bronze Ball Valve (Screwed) 40mm
+Make/ Brand:- hm/zoloto/reliable/Uivalent | D37: 11.0 | E37: Each | F37: 0.0 | I37: Excess(+) | J37: 1.0 | K37: Full Conversion | L37: INR | BA37: 0.0 | BB37: 0.0 | BC37: INR Zero Only | IE37: 1.01 | IF37: Supplying, Conveying and fixing spls. Including eart | IG37: item1 | IH37: 123.223 | II37: Nos
+A38: 26.0 | B38: Supply, Installation, Testing and Commissioning of
+Bronze Ball Valve (Screwed) 50mm
+Make/ Brand:- hm/zoloto/reliable/Uivalent | D38: 5.0 | E38: Each | F38: 0.0 | I38: Excess(+) | J38: 1.0 | K38: Full Conversion | L38: INR | BA38: 0.0 | BB38: 0.0 | BC38: INR Zero Only | IE38: 1.02 | IF38: Construction of chamber for 100mm sluice plates | IG38: item2 | IH38: 213.0 | II38: Nos
+A39: 27.0 | B39: Supply, Installation, Testing and Commissioning of Cables of various sizes including necessary accessories Cable 4mm2 Four Core round cable Make/ Brand:-Polycab/KEI/RR/Equivalent | D39: 20.0 | E39: Metre | F39: 0.0 | I39: Excess(+) | J39: 1.0 | K39: Full Conversion | L39: INR | BA39: 0.0 | BB39: 0.0 | BC39: INR Zero Only | IE39: 2.0 | IF39: Construction of chamber for 100mm sluices valve | IG39: item3 | IH39: 10.0 | II39: Nos
+A40: 28.0 | B40: Supply, Installation, Testing and Commissioning of Cables of various sizes including necessary accessories Cable 2.5mm2 Three Core flat cable Make/ Brand:- Polycab/KEI/RR/Equivalent | D40: 1800.0 | E40: Metre | F40: 0.0 | I40: Excess(+) | J40: 1.0 | K40: Full Conversion | L40: INR | BA40: 0.0 | BB40: 0.0 | BC40: INR Zero Only | IE40: 3.0 | IF40: Supplying, Conveying and fixing spls. Including ea | IG40: item4 | IH40: 10.0 | II40: Nos
+A41: 29.0 | B41: Supply, Installation, Testing and Commissioning of
+Cables of various sizes including necessary
+accessories Cable 0.75mm2 Two Core round cable
+Make/ Brand:- Polycab/KEI/RR/Equivalent | D41: 3000.0 | E41: Metre | F41: 0.0 | I41: Excess(+) | J41: 1.0 | K41: Full Conversion | L41: INR | BA41: 0.0 | BB41: 0.0 | BC41: INR Zero Only | IE41: 1.01 | IF41: Supplying, Conveying and fixing spls. Including eart | IG41: item1 | IH41: 123.223 | II41: Nos
+A42: 30.0 | B42: Supply, Installation, Testing and Commissioning of
+Cables of various sizes including necessary
+accessories Cable 16mm2 Four Core round cable
+Make/ Brand:- Polycab/KEI/RR/Equivalent | D42: 20.0 | E42: Metre | F42: 0.0 | I42: Excess(+) | J42: 1.0 | K42: Full Conversion | L42: INR | BA42: 0.0 | BB42: 0.0 | BC42: INR Zero Only | IE42: 1.02 | IF42: Construction of chamber for 100mm sluice plates | IG42: item2 | IH42: 213.0 | II42: Nos
+A43: 31.0 | B43: Supply, Installation, Testing and Commissioning of
+conduits, bends and fittings of various sizes including necessary accessories PVC Conduit 25mm
+Make/ Brand:- Poycab Finelex/AKG/Sethia/Equivalent | D43: 300.0 | E43: Metre | F43: 0.0 | I43: Excess(+) | J43: 1.0 | K43: Full Conversion | L43: INR | BA43: 0.0 | BB43: 0.0 | BC43: INR Zero Only | IE43: 2.0 | IF43: Construction of chamber for 100mm sluices valve | IG43: item3 | IH43: 10.0 | II43: Nos
+A44: 32.0 | B44: Supply, Installation, Testing and Commissioning of
+conduits, bends and fittings including necessary
+accessories PVC Flexible conduit 4` (OR uPVC Pipe 110 OD (4 Kg.)
+Make/ Brand:- Supreme/Finolex/Equivalent | D44: 150.0 | E44: Metre | F44: 0.0 | I44: Excess(+) | J44: 1.0 | K44: Full Conversion | L44: INR | BA44: 0.0 | BB44: 0.0 | BC44: INR Zero Only | IE44: 3.0 | IF44: Supplying, Conveying and fixing spls. Including ea | IG44: item4 | IH44: 10.0 | II44: Nos
+A45: 33.0 | B45: Complete Watch and ward  and security 24x7 shall be in the scope of contractor, contractor shall be responsible for Operation and Maintainence, any theft, any electrical accident or any other accident to any one , cleaning of fountain shall be done on fortnightly basis. Contractor can be anked to run the fountain from 6:00 A.M to 11:00 P.M in the summar seasm and 8:00 A.M to 5:00 P.M in the winter season or as per requirement of this Corporation. All fountain system willl be kept in funtional state during the Defect Liablity Period. The Defect Liablity Period is for 3 years. | D45: 1.0 | E45: Each | F45: 0.0 | I45: Excess(+) | J45: 1.0 | K45: Full Conversion | L45: INR | BA45: 0.0 | BB45: 0.0 | BC45: INR Zero Only | IE45: 1.01 | IF45: Supplying, Conveying and fixing spls. Including eart | IG45: item1 | IH45: 123.223 | II45: Nos
+A46: 34.0 | B46: Supply, Installation, Testing and Commissioning of
+Solenoid Valve 25mm SS 304 (With Coil 24v DC) IP68
+Make/ Brand:- U Flow Protex/Roter/Equivalent. | D46: 72.0 | E46: Each | F46: 0.0 | I46: Excess(+) | J46: 1.0 | K46: Full Conversion | L46: INR | BA46: 0.0 | BB46: 0.0 | BC46: INR Zero Only | IE46: 1.01 | IF46: Supplying, Conveying and fixing spls. Including eart | IG46: item1 | IH46: 123.223 | II46: Nos
+A47: 35.0 | B47: Supply, Installation, Testing and Commissioning of
+Horizontal submersible Pumping set with C.I.volute, CI Impeller and SS Shaft with mechanical seal, connected to a TEFC induction motor suitable for 400/440 volts, 3 phase 50 cycles A.C. Supply, 2900 rpm, Pump 5HP Make/ Brand:- Crompton/ Kirloskar/KSB | D47: 2.0 | E47: Each | F47: 0.0 | I47: Excess(+) | J47: 1.0 | K47: Full Conversion | L47: INR | BA47: 0.0 | BB47: 0.0 | BC47: INR Zero Only | IE47: 1.02 | IF47: Construction of chamber for 100mm sluice plates | IG47: item2 | IH47: 213.0 | II47: Nos
+A48: 36.0 | B48: Supply, Installation, Testing and Commissioning of SS Pipe 100mm SS 304 (Sch. 10)  Make/ Brand:- Jindal/tata/jsw/Sail | D48: 21.0 | E48: Metre | F48: 0.0 | I48: Excess(+) | J48: 1.0 | K48: Full Conversion | L48: INR | BA48: 0.0 | BB48: 0.0 | BC48: INR Zero Only | IE48: 2.0 | IF48: Construction of chamber for 100mm sluices valve | IG48: item3 | IH48: 10.0 | II48: Nos
+A49: 37.0 | B49: Supply, Installation, Testing and Commissioning of
+Cables of various sizes including necessary
+accessories Cable 2.5mm2 Four Core flat cable  Make/ Brand:- Polycab/KEI/RR/Equivalent | D49: 1500.0 | E49: Metre | F49: 0.0 | I49: Excess(+) | J49: 1.0 | K49: Full Conversion | L49: INR | BA49: 0.0 | BB49: 0.0 | BC49: INR Zero Only | IE49: 3.0 | IF49: Supplying, Conveying and fixing spls. Including ea | IG49: item4 | IH49: 10.0 | II49: Nos
+A50: 38.0 | B50: Supply, Installation, Testing and Commissioning of Central Jets DN65, SS 304/Brass, having 65 mm inlet dia and 20 mm outlet dia with spray hight up to 15 meter which shall be used as a central jet. Make/ Brand:- Reliable Décor BSI/ Ripple/ VCS/Canara/Oasis/Wet | D50: 1.0 | E50: Each | F50: 0.0 | I50: Excess(+) | J50: 1.0 | K50: Full Conversion | L50: INR | BA50: 0.0 | BB50: 0.0 | BC50: INR Zero Only | IE50: 1.01 | IF50: Supplying, Conveying and fixing spls. Including eart | IG50: item1 | IH50: 123.223 | II50: Nos
+A51: 39.0 | B51: Supply, Installation, Testing and Commissioning of allweather Compact Low-Frequency Speaker with LF Frequency Response (±3 dB) 70 Hz – 1.2 kHz: Power Rating (IEC) 200 W: Maximum SPL Direct 8 ohm: 121 dB (peaks of 127 dB): Driver 380 mm (15 in), Kevlarreinforced cone: Nominal Impedance 8 ohms: IP56 per IEC529: Exceeds Mil Spec 810 for humidity, salt spray, temperature and UV, and ASTM G85 for salt
+spray Make/ Brand:- JBL/Bose/Ahuja | D51: 4.0 | E51: Each | F51: 0.0 | I51: Excess(+) | J51: 1.0 | K51: Full Conversion | L51: INR | BA51: 0.0 | BB51: 0.0 | BC51: INR Zero Only | IE51: 1.02 | IF51: Construction of chamber for 100mm sluice plates | IG51: item2 | IH51: 213.0 | II51: Nos
+A52: 40.0 | B52: Supply, Installation, Testing and Commissioning of all weather Compact Low-Frequency Speaker with LF Frequency Response (±3 dB) 70 Hz – 1.2 kHz: Power Rating (IEC) 700 W: Maximum SPL Direct 8 ohm: 121 dB (peaks of 127 dB): Driver 380 mm (15 in), Kevlarreinforced cone: Nominal Impedance 8 ohms: IP56 per IEC529: Exceeds Mil Spec 810 for humidity, salt spray, temperature and UV, and ASTM G85 for salt sprav Make/ Brand:- JBL/Bose/Ahuja | D52: 2.0 | E52: Each | F52: 0.0 | I52: Excess(+) | J52: 1.0 | K52: Full Conversion | L52: INR | BA52: 0.0 | BB52: 0.0 | BC52: INR Zero Only | IE52: 2.0 | IF52: Construction of chamber for 100mm sluices valve | IG52: item3 | IH52: 10.0 | II52: Nos
+A53: 41.0 | B53: Supply, Installation, Testing and Commissioning of allweather Compact Low-Frequency Subwoofer with LF Frequency Response (±3 dB) 70 Hz – 1.2 kHz: Power Rating (IEC) 800 W: Maximum SPL Direct 8 ohm:121 dB (peaks of 127 dB): Driver 380 mm (15 in), Kevlar-reinforced cone: Nominal Impedance 8ohms: IP56 per IEC529: Exceeds Mil Spec 810 for humidity, salt spray, temperature and UV, and ASTM G85 for salt sprav Make/ Brand:- JBL/Bose/Ahuja | D53: 2.0 | E53: Each | F53: 0.0 | I53: Excess(+) | J53: 1.0 | K53: Full Conversion | L53: INR | BA53: 0.0 | BB53: 0.0 | BC53: INR Zero Only | IE53: 3.0 | IF53: Supplying, Conveying and fixing spls. Including ea | IG53: item4 | IH53: 10.0 | II53: Nos
+A54: Total in Figures | BA54: 0.0 | BB54: 0.0 | BC54: INR Zero Only | IE54: 4.0 | IF54: Construction of chamber for 100mm sluice plates | IG54: item5 | IH54: 10.0 | II54: Nos
+A55: Quoted Rate in Figures | E55: Select | BA55: 0.0 | BB55: 0.0 | BC55:  Zero Only
+A56: Quoted Rate in Words | C56: INR Zero Only
+SHEET Macros
+E6: Please Enable Macros to View BoQ information
