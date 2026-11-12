@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ripples · Tender discovery</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/"><span class="brand-mark">≈</span><span>ripples<span class="brand-sub">OPPORTUNITY INTELLIGENCE</span></span></a>
+  <div class="workspace-label">WORKSPACE</div>
+  <nav aria-label="Main navigation">
+    <button class="nav active" data-view="discover"><span>▦</span> Discover <span class="nav-count" id="nav-count">0</span></button>
+    <button class="nav" data-view="keywords"><span>⌘</span> Search strategy</button>
+    <button class="nav" data-view="history"><span>◷</span> Run history</button>
+    <button class="nav" data-view="settings"><span>⚙</span> Setup & scheduling</button>
+  </nav>
+  <div class="sidebar-note"><span class="pulse"></span> SEARCH-FIRST PROTOTYPE<p>Find the right work.<br>Make the next move.</p></div>
+  <div class="workspace"><span class="avatar">RE</span><div>Ripples Engineering<small>India · Business development</small></div></div>
+</aside>
+<main>
+  <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Discover</strong></div><div class="top-actions"><span class="local-indicator">● Local workspace</span><span class="user-avatar">RE</span></div></header>
+  <div class="page">
+    <div class="page-heading"><div><div class="eyebrow">YOUR NEXT OPPORTUNITY</div><h1 id="page-title">Tender discovery</h1><p id="page-subtitle">A clearer view of the projects that fit your expertise.</p></div><div class="heading-actions"><button id="export" class="button secondary">↓ Export results</button><button id="new-run" class="button primary"><span>＋</span> Run discovery</button></div></div>
+    <div class="context-bar"><div class="mode-switch" role="group" aria-label="Data source"><button data-mode="demo" class="selected">Demo workspace</button><button data-mode="live">Live searches</button></div><div class="mode-switch" role="group" aria-label="Opportunity view"><button data-scope="library" class="selected">Opportunity library</button><button data-scope="run">Latest run</button></div><span id="context-note">Synthetic examples for presentation</span><button id="latest-run" class="text-button" hidden>Back to latest run ↗</button><span class="last-run" id="last-run">Loading workspace…</span></div>
+    <div id="error-banner" role="alert" class="notice error" hidden></div>
+    <section id="job-panel" class="job-panel" hidden><div><span class="pulse"></span><strong id="job-title">Discovery in progress</strong><button class="text-button" id="toggle-log">Show activity</button></div><pre id="job-log" hidden></pre></section>
+
+    <section id="view-discover" class="view">
+      <div class="metrics">
+        <div class="metric"><div class="metric-label">DISCOVERED <span>↗</span></div><div class="metric-value" id="metric-total">—</div><div class="metric-foot">Unique opportunities</div></div>
+        <div class="metric"><div class="metric-label">SHORTLISTED <span class="teal">✧</span></div><div class="metric-value" id="metric-shortlist">—</div><div class="metric-foot"><span class="dot teal-bg"></span>Strong capability overlap</div></div>
+        <div class="metric"><div class="metric-label">NEEDS REVIEW <span class="amber">◈</span></div><div class="metric-value" id="metric-review">—</div><div class="metric-foot">Worth a closer look</div></div>
+        <div class="metric"><div class="metric-label">SEARCH COVERAGE <span>◎</span></div><div class="metric-value" id="metric-coverage">—</div><div class="metric-foot" id="coverage-foot">Provider searches completed</div></div>
+      </div>
+      <div class="results-layout">
+        <section class="opportunities panel"><div class="panel-top"><h2>Opportunities <span id="result-count">0</span></h2><span class="subtle" id="run-health">No run loaded</span></div>
+          <div class="tabs" role="group" aria-label="Filter opportunities"><button class="active" data-status="all">All results <span id="tab-all">0</span></button><button data-status="shortlist">Shortlisted <span id="tab-shortlist">0</span></button><button data-status="review">Needs review <span id="tab-review">0</span></button><button data-status="rejected">Rejected <span id="tab-rejected">0</span></button></div>
+          <div class="filters"><label class="search-box"><span>⌕</span><input id="search" type="search" aria-label="Search opportunities" placeholder="Search title, scope or keyword…"></label><select id="lifecycle-filter" aria-label="Filter by discovery status"><option value="all">All discoveries</option><option value="new">New this run</option><option value="rediscovered">Rediscovered</option><option value="not_seen">Not seen this run</option></select><select id="provider-filter" aria-label="Filter by discovery provider"><option value="all">All providers</option><option value="codex">Codex search</option><option value="gpt">GPT search</option><option value="ollama">Ollama search</option></select><select id="sort" aria-label="Sort opportunities"><option value="score">Match, then value ↓</option><option value="new">New first</option><option value="title">Title A–Z</option></select></div>
+          <div id="candidate-list" class="candidate-list" aria-live="polite"><div class="empty">Loading opportunities…</div></div>
+          <div class="list-footer"><span id="list-count">0 opportunities</span><span>Search text only · Verify original notices</span></div>
+        </section>
+        <aside class="insights"><section class="strategy-card"><div class="eyebrow light">BUILT AROUND YOUR EXPERTISE</div><h2>Better searches.<br>Better possibilities.</h2><p>Specific capability phrases help surface work that generic keywords miss.</p><div id="capability-chips" class="chips"></div><button class="strategy-link" id="strategy-link">Explore search strategy <span>↗</span></button><div class="rings" aria-hidden="true">◎</div></section>
+          <section class="panel source-panel"><h3>Discovery sources</h3><div class="source-row"><span class="source-icon">C</span><div>Codex search<small>ChatGPT sign-in · web discovery</small></div><span id="codex-source-count" class="source-count">0</span></div><div class="source-row"><span class="source-icon">G</span><div>GPT web search<small>Search-grounded summaries</small></div><span id="gpt-source-count" class="source-count">0</span></div><div class="source-row"><span class="source-icon ollama">O</span><div>Ollama web search<small>Hosted search · local ranking</small></div><span id="ollama-source-count" class="source-count">0</span></div></section>
+          <div class="review-note"><span>ⓘ</span><p>A shortlist is a starting point. Confirm scope, eligibility, deadlines and corrigenda at the original source.</p></div>
+        </aside>
+      </div>
+    </section>
+    <section id="view-keywords" class="view" hidden><div class="section-intro"><h2>Coverage with a purpose</h2><p>Curated capability groups anchor each search. Model-proposed synonyms broaden phrasing; reviewer feedback influences future query allocation.</p></div><div id="keyword-groups" class="keyword-grid"></div><section class="panel padded"><h2>Searches in this run</h2><div id="query-list"></div></section></section>
+    <section id="view-history" class="view" hidden><section class="panel padded"><h2>Discovery runs</h2><p class="subtle">Open a saved run to inspect its candidates and search coverage.</p><div id="history-list"></div></section></section>
+    <section id="view-settings" class="view" hidden><div class="settings-grid"><section class="panel padded"><h2>Connections</h2><p class="subtle">For Codex discovery, run codex login with ChatGPT. API providers use discovery_mvp/.env. Restart the dashboard after configuration changes.</p><div id="connections"></div><p class="small-note">A configured key does not verify API access. Local Ollama must be running for Ollama ranking.</p></section><section class="panel padded"><h2>Daily discovery</h2><p>Use the included Windows scheduling script from the project folder.</p><pre class="code-block">./discovery_mvp/schedule.ps1 `
+  -Python "$PWD/.venv/Scripts/python.exe" `
+  -At '09:00' -QueryBudget 8</pre><p class="small-note">Runs daily at 09:00 in the computer’s timezone while you’re logged on. Each completed run refreshes the live workspace. This panel does not install or verify a schedule.</p></section></div></section>
+    <footer>RIPPLES ENGINEERING <span>Opportunity intelligence, with a human in the loop.</span><span class="footer-right">MVP / 01</span></footer>
+  </div>
+</main>
+<dialog id="run-dialog"><form id="run-form"><div class="dialog-heading"><div><div class="eyebrow">DISCOVERY WORKFLOW</div><h2>Find your next opportunity</h2></div><button type="button" class="icon-button" id="close-run" aria-label="Close run dialog">×</button></div><p>Plan keywords, search the web, merge duplicates, and rank capability overlap.</p><label>Workspace<select id="run-mode"><option value="demo">Demo · synthetic examples, no API calls</option><option value="live">Live · Codex sign-in or API credentials</option></select></label><div class="form-grid"><label>Discovery providers<select id="run-provider"><option value="codex">Codex search (ChatGPT sign-in)</option><option value="both">GPT API + Ollama search</option><option value="gpt">GPT only</option><option value="ollama">Ollama only</option></select></label><label>Keyword planner & ranker<select id="run-ranker"><option value="ollama">Local Ollama</option><option value="gpt">GPT</option></select></label></div><label>Query budget<input id="run-budget" type="number" min="1" max="32" value="8" required></label><p class="small-note">Eight queries cover all eight capability groups. Codex uses your ChatGPT usage allowance; API providers use their own billing. Demo runs use synthetic providers and rankings.</p><div id="run-error" class="notice error" hidden></div><div class="dialog-footer"><button type="button" class="button secondary" id="cancel-run">Cancel</button><button class="button primary" id="start-run" type="submit">Start discovery ↗</button></div></form></dialog>
+<dialog id="detail-dialog"><div class="dialog-heading"><div class="eyebrow">OPPORTUNITY DETAILS</div><button class="icon-button" id="close-detail" aria-label="Close opportunity details">×</button></div><div id="detail-content"></div></dialog>
+<div id="toast" role="status" hidden></div>
+</body></html>

@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-11-03T14:51:51.463814+05:30",
+  "mode": "live",
+  "health": "ok",
+  "attempted_searches": 1,
+  "successful_searches": 1,
+  "queries": [
+    {
+      "group": "fountains",
+      "phrases": [
+        "musical fountain",
+        "dancing fountain",
+        "musical fountain system",
+        "programmable water display"
+      ],
+      "query": "(\"musical fountain\" OR \"dancing fountain\" OR \"musical fountain system\" OR \"programmable water display\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    }
+  ],
+  "search_log": [
+    {
+      "provider": "codex",
+      "group": "fountains",
+      "status": "ok",
+      "result_count": 2
+    }
+  ],
+  "issues": [],
+  "candidates": [
+    {
+      "id": "1ab29de281d9413fb0a6",
+      "url": "https://tenders.infralens.in/tender/designing-supplying-installation-and-commissioning-of-musical-fountain-2026-hrda-101761-1",
+      "title": "Designing, supplying, installation and commissioning of musical fountain with multimedia show on water screen at Khumb Mela 2027, Haridwar",
+      "snippets": [
+        "Specific tender mirror for Haridwar-Roorkee Development Authority, tender ID 2026_HRDA_101761_1. Scope covers design, supply, installation and commissioning of a musical fountain and multimedia water-screen show in Haridwar. Stated bid deadline: 12 November 2026. Estimated value: ₹3.73 crore."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "fountains"
+      ],
+      "queries": [
+        "(\"musical fountain\" OR \"dancing fountain\" OR \"musical fountain system\" OR \"programmable water display\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 1.0,
+      "reason": "The candidate is a specific procurement notice (tender) for the 'Designing, supplying, installation and commissioning of musical fountain with multimedia show'. This directly matches the 'fountains' capability group (musical fountain) and the 'multimedia' capability group (water screen projection). The evidence confirms the scope covers both required elements.",
+      "evidence": "Scope covers design, supply, installation and commissioning of a musical fountain and multimedia water-screen show in Haridwar. Stated bid deadline: 12 November 2026.",
+      "status": "shortlist",
+      "deadline": "2026-11-12",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "change": "new"
+    },
+    {
+      "id": "dbc2ecea581784fb17e7",
+      "url": "https://tenders.reclaimchennai.city/tender/2026_WRD_716639_1",
+      "title": "Special repairs to the footpath arrangements around Musical Fountain in Upper Park at Mettur Dam",
+      "snippets": [
+        "Specific notice mirror for Tamil Nadu Water Resources Department, tender ID 2026_WRD_716639_1. Scope is civil repairs to footpaths surrounding the musical fountain at Mettur Dam. Stated submission deadline: 11 November 2026 at 15:00; bid opening: 12 November 2026 at 12:00. Estimated value: ₹3,75,109."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "fountains"
+      ],
+      "queries": [
+        "(\"musical fountain\" OR \"dancing fountain\" OR \"musical fountain system\" OR \"programmable water display\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.39,
+      "reason": "The described scope is surrounding civil work; the fountain appears to be a location reference. Check the full notice for direct fountain work before shortlisting.",
+      "evidence": "Specific notice mirror for Tamil Nadu Water Resources Department, tender ID 2026_WRD_716639_1. Scope is civil repairs to footpaths surrounding the musical fountain at Mettur Dam. Stated submission deadline: 11 November 2026 at 15:00",
+      "status": "review",
+      "deadline": "2026-11-11",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "change": "new",
+      "model_score": 0.9,
+      "model_reason": "The candidate is a specific procurement notice (tender) for 'Special repairs' to the footpath arrangements around a 'Musical Fountain'. This directly overlaps with the 'fountains' capability group, specifically the 'musical fountain' sub-category. The evidence confirms it is a tender with an explicit deadline.",
+      "rule_applied": "incidental_fountain_reference"
+    }
+  ],
+  "settings": {
+    "provider": "codex",
+    "ranker": "ollama",
+    "query_budget": 1
+  },
+  "timing": {
+    "planning_seconds": 49.63,
+    "search_seconds": 64.29,
+    "ranking_seconds": 66.45,
+    "processing_seconds": 180.44
+  },
+  "openai_usage": [],
+  "codex_search_calls": [
+    {
+      "query": "(\"musical fountain\" OR \"dancing fountain\" OR \"musical fountain system\" OR \"programmable water display\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 64.29,
+      "web_search_events": 5,
+      "usage": [
+        {
+          "input_tokens": 186888,
+          "cached_input_tokens": 144512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 681,
+          "reasoning_output_tokens": 19
+        }
+      ]
+    }
+  ],
+  "postprocessing": {
+    "scope_guard_applied_at": "2026-11-03T09:26:39.570197+00:00",
+    "note": "Incidental fountain references routed to manual review; original model score and reason retained"
+  }
+}

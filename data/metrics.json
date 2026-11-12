@@ -1,58 +1,66 @@
 {
   "discovery": {
     "calls": 1,
-    "total_seconds": 83.2464389000088,
+    "total_seconds": 78.1496789001394,
     "input_tokens": 0,
     "output_tokens": 0,
     "total_tokens": 0,
-    "average_seconds": 83.2464389000088
+    "average_seconds": 78.1496789001394
   },
   "metadata": {
-    "calls": 420,
-    "total_seconds": 2987.326428198954,
+    "calls": 476,
+    "total_seconds": 13303.336490598507,
     "input_tokens": 0,
     "output_tokens": 0,
     "total_tokens": 0,
-    "average_seconds": 7.112681971902272
+    "average_seconds": 27.94818590461871
   },
   "keyword": {
-    "calls": 408,
-    "total_seconds": 0.006385900196619332,
+    "calls": 248,
+    "total_seconds": 0.0056653989013284445,
     "input_tokens": 0,
     "output_tokens": 0,
     "total_tokens": 0,
-    "average_seconds": 1.5651716168184638e-05
+    "average_seconds": 2.2844350408582437e-05
   },
   "embedding": {
-    "calls": 408,
-    "total_seconds": 864.9514867994003,
+    "calls": 248,
+    "total_seconds": 530.9416415982414,
     "input_tokens": 0,
     "output_tokens": 0,
     "total_tokens": 0,
-    "average_seconds": 2.119979134312256
+    "average_seconds": 2.140893716121941
   },
   "decision": {
-    "calls": 408,
-    "total_seconds": 0.0009809003677219152,
+    "calls": 248,
+    "total_seconds": 0.0009712011087685823,
     "input_tokens": 0,
     "output_tokens": 0,
     "total_tokens": 0,
-    "average_seconds": 2.4041675679458707e-06
+    "average_seconds": 3.916133503099122e-06
   },
   "llm": {
-    "calls": 408,
-    "total_seconds": 6674.071659299661,
-    "input_tokens": 565824,
-    "output_tokens": 43545,
-    "total_tokens": 609369,
-    "average_seconds": 16.358018772793287
+    "calls": 248,
+    "total_seconds": 32470.957227000734,
+    "input_tokens": 340890,
+    "output_tokens": 28066,
+    "total_tokens": 368956,
+    "average_seconds": 130.931279141132
   },
   "scoring": {
-    "calls": 408,
-    "total_seconds": 0.002971600857563317,
+    "calls": 248,
+    "total_seconds": 0.002580102998763323,
     "input_tokens": 0,
     "output_tokens": 0,
     "total_tokens": 0,
-    "average_seconds": 7.283335435204208e-06
+    "average_seconds": 1.0403641124045656e-05
+  },
+  "download": {
+    "calls": 1,
+    "total_seconds": 7.406403000000864,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "average_seconds": 7.406403000000864
   }
 }

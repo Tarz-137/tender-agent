@@ -1,0 +1,388 @@
+{
+  "group_attempts": {
+    "fountains": 3,
+    "water_features": 2,
+    "multimedia": 2,
+    "shows": 2,
+    "maintenance": 2,
+    "aeration": 2,
+    "controls": 2,
+    "bundled": 2
+  },
+  "seen": {
+    "1ab29de281d9413fb0a6": {
+      "fingerprint": "adbaa46899e1fbaced5b067c0a0053f00a9a629b1a62301d7036b2c761b59a1a",
+      "last_seen": "2026-11-03T14:51:51.463814+05:30",
+      "first_seen": "2026-11-03T14:51:51.463814+05:30",
+      "groups": [
+        "fountains"
+      ],
+      "url": "https://tenders.infralens.in/tender/designing-supplying-installation-and-commissioning-of-musical-fountain-2026-hrda-101761-1"
+    },
+    "dbc2ecea581784fb17e7": {
+      "fingerprint": "88a10534c14ea74afc3d743a3abeb4a2290b17e2bfa828f687c15654598796e3",
+      "last_seen": "2026-11-03T14:51:51.463814+05:30",
+      "first_seen": "2026-11-03T14:51:51.463814+05:30",
+      "groups": [
+        "fountains"
+      ],
+      "url": "https://tenders.reclaimchennai.city/tender/2026_WRD_716639_1"
+    },
+    "fabc69f327a872605c28": {
+      "fingerprint": "1eb07e8e7992a843df835288c94c4ba7a777a2788e07ddbccea590b0af028db6",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled",
+        "water_features"
+      ],
+      "url": "https://tenders.infralens.in/tender/supply-installation-and-commissioning-of-ring-fountain-with-centre-2026-kmc-1047518-1"
+    },
+    "b2f557ce1079fc5ee377": {
+      "fingerprint": "306b8b31d0c6bf970afce29dd71c17d547d3681341a861e18c3da17af61792ab",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled",
+        "water_features"
+      ],
+      "url": "https://tenders.infralens.in/tender/request-for-proposal-for-supply-installation-testing-and-commissioning-2026-ldaup-1204476-1"
+    },
+    "0f87809c5683901aad5b": {
+      "fingerprint": "5d159ff6f2b67ab330978fe075ac1b3d58e4f6c9528e9ddf72d62aedba82be83",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "water_features"
+      ],
+      "url": "https://tenders.infralens.in/tender/civil-and-electrical-work-2026-pwd-300656-1"
+    },
+    "cc1dbeedae5427cafb76": {
+      "fingerprint": "31681cc364b6ef1237e0e2349b1b397a5d166c0741446609cb3f99d030187980",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "water_features"
+      ],
+      "url": "https://asktender.org/in/tenders/1490186/outdoor-indoor-fountain"
+    },
+    "6fadded82ac578e3a179": {
+      "fingerprint": "78dff5c49cba64b3ea7ed778a3390a4fdda4a62cd841cef141c3753afc33aca2",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled",
+        "fountains",
+        "multimedia"
+      ],
+      "url": "https://asiantender.com/tender-summary/60163926"
+    },
+    "18dcd72aa99d8ba5fc70": {
+      "fingerprint": "449ca68cdbc3c78cd5dea63eec06efd858f3e09002a09e69ae5dfe57448a5fdc",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "multimedia"
+      ],
+      "url": "https://www.gemexpert.tech/tender/65135cc8-4f8f-4780-8371-ef295af987b3"
+    },
+    "c85eb508a44d04deb2ac": {
+      "fingerprint": "e049292befd873fce57699a737937851e30b795176f2d8ddfc2554bfd66cefb9",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "shows"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58228782/5eab1e142bae331d9434359b1c33b925"
+    },
+    "7275c0613422f9e0fa29": {
+      "fingerprint": "8eb3fbd98961246125465c549bfcff03be1ac2ba40f14deb60dc2ed3a8bc3d03",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "shows"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58153058/3f067a10294a1c147f0f0075fc5ad338"
+    },
+    "da674cbdda3482217c85": {
+      "fingerprint": "dc5ba727f66818901a614b4a192dadf15f7a0f5bb49de0414494c66c01e4dc9c",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "shows"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/57416431/dfd3f9297fd197c859cebe88f85560e2"
+    },
+    "b5c7e804ba56b9318641": {
+      "fingerprint": "25fca438493a9a9fc4a3ac54a04fc01939e091280ccd63e59b2bae7744e38fe6",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "shows"
+      ],
+      "url": "https://tenders.infralens.in/tender/request-for-proposal-for-selection-of-an-agency-for-2026-uptdp-1201676-1"
+    },
+    "9a1bfacea35fba5adef2": {
+      "fingerprint": "bd920feb358755b03185cbdfd96a1fe77a4b50adeb120d02d6a4974edcd99d66",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "maintenance"
+      ],
+      "url": "https://www.tendershark.com/details/delhi-tender/central-public-works-department/6bf0dad1-580f-44be-86d3-42de0e6acb0b"
+    },
+    "4aebfc36e25614ed62f3": {
+      "fingerprint": "2ceaf2d74a84488f9b717d0ba8532abb835d5417aa7e03540678d8a37e3626ff",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "maintenance"
+      ],
+      "url": "https://tenders.infralens.in/tender/o-m-of-fountain-of-mba-area-dlb2627ssob23784"
+    },
+    "1e9c496920292b1f9d7d": {
+      "fingerprint": "b4b9cb8349654f11afbd10257ef971d6a01c96c9ecda5c0df452d2c9a104b95e",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled",
+        "controls",
+        "maintenance"
+      ],
+      "url": "https://govttenderhub.com/tender/576915-request-for-proposal-for-supply-installation-testing-and"
+    },
+    "1581f9a4b258a4f13f9b": {
+      "fingerprint": "177148637dfed810541c88d043b429fdded98cf631c2f48a4b624245453c1a61",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "maintenance"
+      ],
+      "url": "https://tenderkart.in/tender/34d6feb5-f407-4d8d-81c7-badc42f49d86"
+    },
+    "112cf408ab66dc52b0dc": {
+      "fingerprint": "6664d608b8a38b99dcb4fd8191096d4dcff098a6df48ab70837d7c3508843107",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "fountains",
+        "maintenance",
+        "water_features"
+      ],
+      "url": "https://app.atlenza.com/tender/supplying-erection-and-commissioning-of-floating-fountain-under-e6add447bc3e4224893ce88588537d19"
+    },
+    "30af7a9f7e16792ceaa1": {
+      "fingerprint": "b691340e85de3b6eee2e48257337da56dbdb190bc41255dcaa515414f171544e",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "controls"
+      ],
+      "url": "https://tenders.infralens.in/gem/submersible-pump-and-water-nozzle-assembly-8198698"
+    },
+    "7946a4e717edc1c7ece8": {
+      "fingerprint": "609b0ba5c35b526b54eb7dd7918b0c1bff9bcf8d9e7490b49c22c02f2a6bcf0d",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "controls"
+      ],
+      "url": "https://tenderkart.in/tender/68e1a694-f77f-421b-b91d-4f3c3a1bd4db"
+    },
+    "0297c99712441c92bc64": {
+      "fingerprint": "865bd33cbec05803e1fd88767fd54be5470e690190dd70b561ea2eb21ecf5591",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled"
+      ],
+      "url": "https://tenders.infralens.in/tender/fixing-fountain-at-nanora-talab-2026-uad-545661-1"
+    },
+    "0355a86622e6b519bb17": {
+      "fingerprint": "2bc082f835f6a82785709a068e7bd82fa15d4f6cfc39d3774b1b097e0249e8dc",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled"
+      ],
+      "url": "https://tenders.infralens.in/tender/restoration-upgradation-of-250-kva-sub-station-and-fountain-2026-pwdjk-329823-1"
+    },
+    "b1ed8a5c6013b2a9c0dd": {
+      "fingerprint": "288a7c329dad4a3e841a5c07273cfdbf5c6aab8340b0b676f589ceeeee53c6f0",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "bundled",
+        "fountains",
+        "water_features"
+      ],
+      "url": "https://www.tendershark.com/details/punjab-tender/department-of-local-government/94fe1e42-babc-4529-ab1c-928ea39c6a0f"
+    },
+    "698dac8f50a2c301baef": {
+      "fingerprint": "34cf777f66c189a787024d52b2aa12c84493437ec127ea513ff735ff826031e3",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "fountains"
+      ],
+      "url": "https://asiantender.com/tender-summary/60202475"
+    },
+    "57d19084e73ca82ce58e": {
+      "fingerprint": "f269d5ae39b9a4b8e54eac0a6480188a920acf9e132f1793184bdc585fc8a515",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "fountains"
+      ],
+      "url": "https://tenders.infralens.in/tender/construction-of-colour-musical-fountain-at-ward-no-13-2026-uad-544882-1"
+    },
+    "6b20d93af196ff6f3170": {
+      "fingerprint": "428da3e38bd55605f6908826f729ac704f799daaecda22933d44846cbc587dea",
+      "last_seen": "2026-11-04T10:48:33.337374+05:30",
+      "first_seen": "2026-11-04T10:48:33.337374+05:30",
+      "groups": [
+        "fountains"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58166198/566517eb2015d885e925439cc9ebf22f"
+    },
+    "f44c6e887134536dde96": {
+      "fingerprint": "58ab1ff4137595bd86d9caca7c205416ce3a5a28fb2c4c85b7b8500427e9a944",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "controls",
+        "water_features"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58269506/1a5f67c75bab002602ab6d9853b8bd3b"
+    },
+    "930750885cf7f6553acb": {
+      "fingerprint": "8521fcf1dca4fa2f04a224c632dca828a2855404387f434c1e8aab2f2a7801cb",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "maintenance",
+        "water_features"
+      ],
+      "url": "https://govttenderhub.com/tender/548482-special-repairs-to-the-gandhi-fountain-water-proofing-and-flooring"
+    },
+    "bd241623af50175785a1": {
+      "fingerprint": "e0715aa17559f320c4e2a1e170f1de5d9365984489cb10d4a8290800363f01a9",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "multimedia"
+      ],
+      "url": "https://govttenderhub.com/tender/512895-request-for-proposal-for-selection-of-an-agency-for-conceptualization"
+    },
+    "fe337b42fe62469f431f": {
+      "fingerprint": "f1cc7506e7518edfacb793a8d2c6651e7e43a3ca17863ae999a5832db2af7b0a",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "multimedia",
+        "shows"
+      ],
+      "url": "https://eproc.rajasthan.gov.in/nicgep/app?component=%24DirectLink_0&page=CorrViewDetails&service=direct&session=T&sp=SW0gb5zgBTVqLs%2BjHm%2ByF5Q%3D%3D"
+    },
+    "dc8b10ec9b345d922258": {
+      "fingerprint": "2129397a18c576aee597eceb0f260a06ea021cb259c018a791b79a3c221bdc11",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "multimedia"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58340363/302e419fef53b27359a6fabe306c24bc"
+    },
+    "65c553cef1c471f4d431": {
+      "fingerprint": "5f52ebbfa837e8f1d8251f86e1a6fdfb9c3477e56833b8e2c600317843e70725",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "fountains",
+        "multimedia"
+      ],
+      "url": "https://govttenderhub.com/tender/540591-janeshwar-mishra-park-mein-sthapit-03-nos-water-screen-intigrated"
+    },
+    "0e27279fde6df433bdb7": {
+      "fingerprint": "b258aaf0acfadb084e3b1b8331858d64239960a8a7f1db985fcdd67178dfc559",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "shows"
+      ],
+      "url": "https://tenderkart.in/tender/14e2dcd0-7c36-4f1b-9a84-7c2e4db23735"
+    },
+    "4f222fe1cd3101a9464d": {
+      "fingerprint": "058f04d31fae23f0d301ed7bb7b543e255e5322dddc358a0a928e8df065f0519",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "shows"
+      ],
+      "url": "https://mail.tender84.com/tender/up/2026_LDAUP_1199989_1"
+    },
+    "148d0b6e822696ac61eb": {
+      "fingerprint": "12f2a4f2a2db3acce8bdfaac004528f07613a8979000863894b8336f7ec5a36c",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "maintenance"
+      ],
+      "url": "https://govttenderhub.com/tender/543748-repair-and-maintenance-of-existing-water-body-of-fountain-and-other"
+    },
+    "0854b58360df5b55d3b3": {
+      "fingerprint": "5cbcc7e3bd140eaf1df7cf27275b22c2d122e250dba7469c41ece15d020810ec",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "aeration"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58344516/64a8ec08f0139f7c91667e8e99b05cde"
+    },
+    "e9abe3cddbd9971ada04": {
+      "fingerprint": "2766cfbd0d5cfc9ab589045bdbeb62a1f3b5ac606151b91ffcf11d09a3ccd33a",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "controls"
+      ],
+      "url": "https://govttenderhub.com/tender/569867-facility-management-services-lumpsum-based-supply-and-installation-of"
+    },
+    "cd670ed3a37b6f56324b": {
+      "fingerprint": "af9302c5bca44674f926822b60564e0c7c78210758e827da2c097a002c992afc",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "controls"
+      ],
+      "url": "https://www.tender247.com/tender-details/development-redevelopment-of-central-vista-avenue-105733369?count=6&keyword_id=20334&organization_id=central-public-works-department&product_id=1917&tesd=05-11-2026"
+    },
+    "b3863a19acab63c63543": {
+      "fingerprint": "7f776a6626328026c9bd9f01c57de79137bc3450df3754709f53c781136cead3",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "bundled"
+      ],
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58349893/facbb04ea00f08aebe0b4b80bfd19c10"
+    },
+    "cb3bf53eae3f33c8a60b": {
+      "fingerprint": "0038cf92c056b42a97acf752afb32fee5b94d6d8c85d76a80e578df4afcdae05",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "bundled"
+      ],
+      "url": "https://tenders.infralens.in/tender/beautification-work-of-fountain-park-in-harsh-nagar-under-2026-nnkan-1204171-1"
+    },
+    "20043eac36720d4f50c7": {
+      "fingerprint": "133bc3193dcce1f802d6d8ebad363d4947753c4a649511055b4f23bbe11448e5",
+      "last_seen": "2026-11-04T11:51:48.517519+05:30",
+      "first_seen": "2026-11-04T11:51:48.517519+05:30",
+      "groups": [
+        "fountains"
+      ],
+      "url": "https://app.atlenza.com/tender/designing-supplying-installation-and-commissioning-of-musical-fountain-0d486cfe098c44f5b009c06ac583319c"
+    }
+  }
+}

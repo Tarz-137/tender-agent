@@ -1,0 +1,92 @@
+{
+  "group_attempts": {
+    "fountains": 4,
+    "water_features": 4,
+    "multimedia": 4,
+    "shows": 4,
+    "maintenance": 4,
+    "aeration": 4,
+    "controls": 3,
+    "bundled": 3
+  },
+  "seen": {
+    "2861faac53f18c82ead8": {
+      "fingerprint": "40462898fc97078b085970ccab45db038028dbf03c2038b1d3c8907212ef5e24",
+      "last_seen": "2026-11-04T10:48:24.636428+05:30",
+      "first_seen": "2026-11-03T13:01:52.601751+05:30",
+      "groups": [
+        "aeration",
+        "bundled",
+        "controls",
+        "fountains",
+        "maintenance",
+        "multimedia",
+        "shows",
+        "water_features"
+      ],
+      "url": "https://example.com/demo/fountain"
+    },
+    "f87bb0a07e6bcb75d24a": {
+      "fingerprint": "004fcc62564906122bf006a168f43d6fc416250b12c1bf89bc8483616f440372",
+      "last_seen": "2026-11-04T10:48:24.636428+05:30",
+      "first_seen": "2026-11-03T13:01:52.601751+05:30",
+      "groups": [
+        "aeration",
+        "bundled",
+        "controls",
+        "fountains",
+        "maintenance",
+        "multimedia",
+        "shows",
+        "water_features"
+      ],
+      "url": "https://example.com/demo/tourism"
+    },
+    "dc01f6ba50208ddadfa6": {
+      "fingerprint": "cfc27869dc6902908d1ba9f2158f573dbe7a17ac179eca710eba6029e438a614",
+      "last_seen": "2026-11-04T10:48:24.636428+05:30",
+      "first_seen": "2026-11-03T13:01:52.601751+05:30",
+      "groups": [
+        "aeration",
+        "bundled",
+        "controls",
+        "fountains",
+        "maintenance",
+        "multimedia",
+        "shows",
+        "water_features"
+      ],
+      "url": "https://example.com/demo/pumps"
+    },
+    "64f5c7be9c2d7ed807bc": {
+      "fingerprint": "6aac004ac2809e1e959acebac39e83a2d1bf3d617775f377448cde999a631e9a",
+      "last_seen": "2026-11-04T10:48:24.636428+05:30",
+      "first_seen": "2026-11-03T13:01:52.601751+05:30",
+      "groups": [
+        "aeration",
+        "bundled",
+        "controls",
+        "fountains",
+        "maintenance",
+        "multimedia",
+        "shows",
+        "water_features"
+      ],
+      "url": "https://example.com/demo/catalogue"
+    }
+  },
+  "feedback": {
+    "2861faac53f18c82ead8": {
+      "label": "relevant",
+      "groups": [
+        "aeration",
+        "fountains",
+        "maintenance",
+        "multimedia",
+        "shows",
+        "water_features"
+      ],
+      "updated_at": "2026-11-03T13:56:39.396778+05:30"
+    }
+  }
+}

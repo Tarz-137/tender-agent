@@ -1,0 +1,17 @@
+{
+  "company": "Ripples Engineering",
+  "geography": "India",
+  "groups": {
+    "fountains": ["musical fountain", "dancing fountain", "floating fountain", "programmable fountain"],
+    "water_features": ["architectural fountain", "decorative fountain", "landscape water feature"],
+    "multimedia": ["multimedia water show", "water screen projection", "projection mapping"],
+    "shows": ["laser show", "synchronized light and sound show", "interactive multimedia installation"],
+    "maintenance": ["fountain renovation", "fountain rehabilitation", "fountain operation and maintenance"],
+    "aeration": ["floating aerator", "lake aeration system"],
+    "controls": ["fountain control panel", "fountain underwater lighting", "PLC fountain control"],
+    "bundled": ["tourism infrastructure fountain", "park development water feature", "lake beautification fountain"]
+  },
+  "procurement_terms": "(tender OR bid OR RFP OR NIT)",
+  "ambiguous_terms": ["water", "pump", "lighting", "civil", "landscaping"],
+  "shortlist_threshold": 0.7
+}

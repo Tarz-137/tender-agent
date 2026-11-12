@@ -1,0 +1,17 @@
+{
+  "provider": "ollama",
+  "ranker": "ollama",
+  "query_budget": 8,
+  "started_at": "2026-11-03T14:22:18.818871+05:30",
+  "finished_at": "2026-11-03T14:29:24.321193+05:30",
+  "duration_seconds": 425.5,
+  "status": "failed",
+  "stop_reason": "Stopped after separate Ollama web-search probe returned HTTP 402",
+  "searches_started_in_main_run": 0,
+  "probe": {
+    "query": "musical fountain tender India",
+    "error": "API HTTP 402",
+    "command_wall_seconds": 3.21,
+    "result_count": 0
+  }
+}
