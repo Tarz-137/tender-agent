@@ -2,7 +2,7 @@ param(
     [Parameter(Mandatory=$true)][string]$Python,
     [string]$At = '09:00',
     [ValidateSet('codex', 'gpt', 'ollama', 'both')][string]$Provider = 'codex',
-    [ValidateSet('gpt', 'ollama')][string]$Ranker = 'ollama',
+    [ValidateSet('codex', 'gpt', 'ollama')][string]$Ranker = 'codex',
     [ValidateRange(1,32)][int]$QueryBudget = 6,
     [string]$TaskName = 'Ripples-Tender-Discovery-MVP',
     [switch]$Remove

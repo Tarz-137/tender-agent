@@ -76,14 +76,14 @@ class Dashboard:
     def start(self, data):
         mode = data.get("mode", "demo")
         self.directory(mode)
-        provider, ranker = data.get("provider", "codex"), data.get("ranker", "ollama")
+        provider, ranker = data.get("provider", "codex"), data.get("ranker", "codex")
         budget = data.get("query_budget", 8)
-        if provider not in ("codex", "gpt", "ollama", "both") or ranker not in ("gpt", "ollama"):
+        if provider not in ("codex", "gpt", "ollama", "both") or ranker not in ("codex", "gpt", "ollama"):
             raise ValueError("Invalid provider or ranker")
         if type(budget) is not int or not 1 <= budget <= 32:
             raise ValueError("Query budget must be 1..32")
         if mode == "live":
-            if provider == "codex" and not cli_path():
+            if (provider == "codex" or ranker == "codex") and not cli_path():
                 raise ValueError("Install Codex CLI or set CODEX_CLI_PATH, then run codex login")
             if (provider in ("gpt", "both") or ranker == "gpt") and not os.getenv("OPENAI_API_KEY"):
                 raise ValueError("Add OPENAI_API_KEY to discovery_mvp/.env and restart the dashboard")

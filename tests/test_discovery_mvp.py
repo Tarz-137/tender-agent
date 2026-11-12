@@ -169,6 +169,23 @@ class DiscoveryMVPTests(unittest.TestCase):
             self.assertEqual(len(report['candidates']), 4)
             self.assertEqual(report['successful_searches'], 1)
 
+    def test_codex_search_and_ranking_need_no_ollama_or_api_keys(self):
+        args = argparse.Namespace(profile=ROOT / 'discovery_mvp/profile.json', feedback=None,
+                                  demo=False, provider='codex', ranker='codex', query_budget=1,
+                                  results_per_query=2)
+        with tempfile.TemporaryDirectory() as temp, patch.dict(os.environ, {}, clear=True), \
+                patch('discovery_mvp.run.CodexSearch', return_value=Demo()), \
+                patch('discovery_mvp.run.CodexRanker', return_value=Demo()), \
+                patch('discovery_mvp.run.Ollama') as ollama, \
+                patch('discovery_mvp.run.OpenAI') as api:
+            self.assertEqual(execute(args, Path(temp)), 0)
+            ollama.assert_not_called()
+            api.assert_not_called()
+            report = json.loads((Path(temp) / 'latest.json').read_text())
+            self.assertEqual(report['health'], 'ok')
+            self.assertEqual(report['settings']['ranker'], 'codex')
+            self.assertTrue(any(item['status'] == 'shortlist' for item in report['candidates']))
+
     def test_codex_and_local_ranker_need_no_search_api_keys(self):
         args = argparse.Namespace(profile=ROOT / 'discovery_mvp/profile.json', feedback=None,
                                   demo=False, provider='codex', ranker='ollama', query_budget=1,

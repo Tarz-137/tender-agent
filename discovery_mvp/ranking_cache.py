@@ -21,6 +21,9 @@ ASSESSMENT_FIELDS = (
 
 def ranking_signature(profile, model, ranker_name, demo=False):
     root = Path(__file__).parent
+    implementation_files = ["engine.py", "providers.py"]
+    if ranker_name == "codex":
+        implementation_files += ["codex_ranker.py", "codex_search.py"]
     payload = {
         "revision": os.getenv("DISCOVERY_RANK_CACHE_VERSION", "1"), "demo": demo,
         "ranker": ranker_name, "model": getattr(model, "model", ranker_name),
@@ -28,7 +31,7 @@ def ranking_signature(profile, model, ranker_name, demo=False):
         "capabilities": profile["groups"], "threshold": profile["shortlist_threshold"],
         "prompt": RANK_PROMPT,
         "implementation": {**{name: hashlib.sha256((root / name).read_bytes()).hexdigest()
-                              for name in ("engine.py", "providers.py")},
+                              for name in implementation_files},
                            "ranking_cache.py": LOGIC_FINGERPRINT},
     }
     return hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()

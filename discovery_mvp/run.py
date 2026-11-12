@@ -17,6 +17,7 @@ from discovery_mvp.engine import (
 )
 from discovery_mvp.providers import Ollama, OpenAI
 from discovery_mvp.codex_search import CodexSearch
+from discovery_mvp.codex_ranker import CodexRanker
 from discovery_mvp.values import prepare_report
 from discovery_mvp.ranking_cache import RankingCache, ranking_signature
 from discovery_mvp.storage import Store
@@ -110,7 +111,7 @@ def execute(args, output):
             except ValueError as exc:
                 issues.append(f"{name}: {exc}")
         try:
-            ranker = OpenAI() if args.ranker == "gpt" else Ollama()
+            ranker = {"codex": CodexRanker, "gpt": OpenAI, "ollama": Ollama}[args.ranker]()
         except ValueError as exc:
             issues.append(f"ranker: {exc}")
             ranker = None
@@ -200,6 +201,7 @@ def execute(args, output):
                          for usage in getattr(provider, "usage", [])],
         "codex_search_calls": [call for provider in providers.values()
                                for call in getattr(provider, "calls", [])],
+        "codex_rank_calls": getattr(ranker, "calls", []) if args.ranker == "codex" else [],
     }
     report = prepare_report(report)
     run_id = now.strftime("%Y%m%d-%H%M%S") + "-" + uuid.uuid4().hex[:6]
@@ -224,7 +226,7 @@ def execute(args, output):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--provider", choices=["codex", "gpt", "ollama", "both"], default="codex")
-    parser.add_argument("--ranker", choices=["gpt", "ollama"], default="ollama")
+    parser.add_argument("--ranker", choices=["codex", "gpt", "ollama"], default="codex")
     parser.add_argument("--demo", action="store_true", help="Synthetic offline presentation")
     parser.add_argument("--profile", type=Path, default=ROOT / "discovery_mvp/profile.json")
     parser.add_argument("--env-file", type=Path, default=ROOT / "discovery_mvp/.env")

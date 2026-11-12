@@ -137,26 +137,33 @@ Demo output and state are separate from live output and state.
 
 ## Run live searches
 
-### Recommended: Codex discovery + local Ollama ranking
+### Recommended: Codex discovery + Codex ranking
 
-The default provider now uses the supported Codex CLI with ChatGPT sign-in:
+Discovery, keyword planning and ranking default to Codex with ChatGPT sign-in.
+On a new laptop, install Python 3.10+ and Codex (CLI or the Windows desktop app),
+clone the repository, and sign in. No pip packages or local model downloads are
+needed for this discovery workflow. From the repository root:
 
 ```powershell
 codex login status
 # If needed, run: codex login
-.venv/Scripts/python.exe -B -m discovery_mvp.run --provider codex --ranker ollama --query-budget 8
+python -B -m discovery_mvp.run --provider codex --ranker codex --query-budget 8
 ```
 
-No OpenAI or Ollama search API key is required for this combination. It consumes
-your Codex subscription usage allowance. Local Ollama still needs to be running
-with the configured chat model installed. The dashboard defaults its discovery
-provider to Codex. Restart an already-running dashboard to load backend changes.
+No OpenAI or Ollama API key is required for this combination. Search, planning
+and ranking consume your Codex usage allowance. Qwen/Ollama is optional. The
+command line, dashboard and scheduling script default to Codex for both discovery
+and ranking. Restart an already-running dashboard to load backend changes.
+
+To use a local model, explicitly choose `--ranker ollama` (or Local Ollama in the
+dashboard), start Ollama, and install `OLLAMA_CHAT_MODEL`. GPT API ranking remains
+available through `--ranker gpt` with `OPENAI_API_KEY`.
 
 If Codex is missing from PATH, set `CODEX_CLI_PATH` in `.env` to its executable's
 absolute path. On Windows the prototype also automatically checks the Codex
 desktop app's versioned installation when it is absent from PATH. Restart the
 server after updating the Python code. The scheduled task runs under your Windows account and needs that
-account's Codex ChatGPT sign-in. `schedule.ps1` also defaults to `-Provider codex`.
+account's Codex ChatGPT sign-in. `schedule.ps1` defaults to `-Provider codex -Ranker codex`.
 No schedule is automatically registered or replaced.
 
 Codex runs in an isolated temporary working folder, with read-only sandboxing,
@@ -169,7 +176,14 @@ Verify original tender notices; mirrors and stale listings may appear.
 Each query has a 240-second timeout and no automatic retry. Set
 `CODEX_SEARCH_TIMEOUT` to adjust it. Results record per-query CLI usage and timing
 in `codex_search_calls`, alongside planning, search, ranking and total processing
-timings. Short local JSON tasks disable thinking and cap output at 1,024 tokens;
+timings. Planning/ranking calls use supplied data only, with web search disabled,
+a separate `CODEX_RANK_TIMEOUT` (default 180 seconds), and no automatic retry.
+Their timing and usage are recorded in `codex_rank_calls`. `CODEX_RANK_MODEL`
+optionally overrides the CLI default; increment `DISCOVERY_RANK_CACHE_VERSION`
+if that default changes and you want fresh assessments. The ranking cache also
+separates Codex assessments from Ollama/GPT assessments.
+
+When Ollama is selected, short local JSON tasks disable thinking and cap output at 1,024 tokens;
 failed local requests are not retried automatically. Check the report for any
 partial result or model-output truncation.
 

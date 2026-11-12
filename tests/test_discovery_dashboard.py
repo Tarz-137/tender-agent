@@ -122,11 +122,27 @@ class DashboardTests(unittest.TestCase):
     def test_run_validation_and_overlap_protection(self):
         with self.assertRaises(ValueError):
             self.dashboard.start({'query_budget': 0})
-        with patch.dict(os.environ, {}, clear=True), self.assertRaisesRegex(ValueError, 'OPENAI_API_KEY'):
+        with patch.dict(os.environ, {}, clear=True), patch('discovery_mvp.server.cli_path', return_value='codex'), \
+                self.assertRaisesRegex(ValueError, 'OPENAI_API_KEY'):
             self.dashboard.start({'mode': 'live', 'provider': 'both'})
         self.dashboard.job = {'status': 'running'}
         with self.assertRaisesRegex(RuntimeError, 'already in progress'):
             self.dashboard.start({'mode': 'demo'})
+
+    def test_run_defaults_to_codex_search_and_ranker_without_api_keys(self):
+        with patch.dict(os.environ, {}, clear=True), \
+                patch('discovery_mvp.server.cli_path', return_value='codex'), \
+                patch('discovery_mvp.server.subprocess.Popen') as popen, \
+                patch('discovery_mvp.server.threading.Thread'):
+            self.dashboard.start({'mode': 'live'})
+            command = popen.call_args.args[0]
+            self.assertEqual(command[command.index('--provider') + 1], 'codex')
+            self.assertEqual(command[command.index('--ranker') + 1], 'codex')
+
+    def test_codex_ranker_requires_cli_even_with_other_search_provider(self):
+        with patch('discovery_mvp.server.cli_path', return_value=None):
+            with self.assertRaisesRegex(ValueError, 'Install Codex CLI'):
+                self.dashboard.start({'mode': 'live', 'provider': 'gpt', 'ranker': 'codex'})
 
 
 if __name__ == '__main__':
