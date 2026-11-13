@@ -1,0 +1,113 @@
+{
+  "created_at": "2026-11-13T12:31:18.742956+05:30",
+  "mode": "live",
+  "health": "failed",
+  "attempted_searches": 8,
+  "successful_searches": 0,
+  "queries": [
+    {
+      "group": "water_features",
+      "phrases": [
+        "landscape water feature",
+        "architectural fountain"
+      ],
+      "query": "(\"landscape water feature\" OR \"architectural fountain\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "multimedia",
+      "phrases": [
+        "projection mapping",
+        "multimedia water show"
+      ],
+      "query": "(\"projection mapping\" OR \"multimedia water show\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "shows",
+      "phrases": [
+        "interactive multimedia installation",
+        "laser show"
+      ],
+      "query": "(\"interactive multimedia installation\" OR \"laser show\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "maintenance",
+      "phrases": [
+        "fountain operation and maintenance",
+        "fountain renovation"
+      ],
+      "query": "(\"fountain operation and maintenance\" OR \"fountain renovation\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "aeration",
+      "phrases": [
+        "floating aerator",
+        "lake aeration system"
+      ],
+      "query": "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "controls",
+      "phrases": [
+        "PLC fountain control",
+        "fountain control panel"
+      ],
+      "query": "(\"PLC fountain control\" OR \"fountain control panel\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "bundled",
+      "phrases": [
+        "lake beautification fountain",
+        "tourism infrastructure fountain"
+      ],
+      "query": "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "fountains",
+      "phrases": [
+        "programmable fountain",
+        "musical fountain"
+      ],
+      "query": "(\"programmable fountain\" OR \"musical fountain\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    }
+  ],
+  "search_log": [],
+  "issues": [
+    "codex: Codex requires ChatGPT sign-in for this provider. Run codex login",
+    "ranker: Codex requires ChatGPT sign-in for this provider. Run codex login"
+  ],
+  "candidates": [],
+  "ranking_cache": {
+    "hits": 0,
+    "misses": 0,
+    "writes": 0,
+    "signature": "edf8e963ec2ab77a054bf5e0bff9e5f7b9f8f44116843ae5b51eff1171ada7b8"
+  },
+  "settings": {
+    "provider": "codex",
+    "ranker": "codex",
+    "ranker_model": "codex",
+    "query_budget": 8
+  },
+  "timing": {
+    "planning_seconds": 0.0,
+    "search_seconds": 0.0,
+    "ranking_seconds": 0.0,
+    "processing_seconds": 1.5
+  },
+  "openai_usage": [],
+  "codex_search_calls": [],
+  "codex_rank_calls": [],
+  "ranking_order": [
+    "match score descending",
+    "stated INR value descending",
+    "title"
+  ]
+}

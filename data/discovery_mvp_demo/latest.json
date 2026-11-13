@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-11-04T10:48:24.636428+05:30",
+  "created_at": "2026-11-13T12:30:59.977315+05:30",
   "mode": "demo (synthetic)",
   "health": "ok",
   "attempted_searches": 16,
@@ -8,73 +8,73 @@
     {
       "group": "controls",
       "phrases": [
-        "PLC fountain control",
-        "fountain control panel"
+        "fountain control panel",
+        "fountain underwater lighting"
       ],
-      "query": "(\"PLC fountain control\" OR \"fountain control panel\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.5
     },
     {
       "group": "bundled",
       "phrases": [
-        "lake beautification fountain",
-        "tourism infrastructure fountain"
+        "tourism infrastructure fountain",
+        "park development water feature"
       ],
-      "query": "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.5
     },
     {
       "group": "fountains",
       "phrases": [
-        "programmable fountain",
-        "musical fountain"
+        "musical fountain",
+        "dancing fountain"
       ],
-      "query": "(\"programmable fountain\" OR \"musical fountain\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.667
     },
     {
       "group": "water_features",
       "phrases": [
-        "architectural fountain",
-        "decorative fountain"
+        "decorative fountain",
+        "landscape water feature"
       ],
-      "query": "(\"architectural fountain\" OR \"decorative fountain\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.667
     },
     {
       "group": "multimedia",
       "phrases": [
-        "multimedia water show",
-        "water screen projection"
+        "water screen projection",
+        "projection mapping"
       ],
-      "query": "(\"multimedia water show\" OR \"water screen projection\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.667
     },
     {
       "group": "shows",
       "phrases": [
-        "laser show",
-        "synchronized light and sound show"
+        "synchronized light and sound show",
+        "interactive multimedia installation"
       ],
-      "query": "(\"laser show\" OR \"synchronized light and sound show\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.667
     },
     {
       "group": "maintenance",
       "phrases": [
-        "fountain renovation",
-        "fountain rehabilitation"
+        "fountain rehabilitation",
+        "fountain operation and maintenance"
       ],
-      "query": "(\"fountain renovation\" OR \"fountain rehabilitation\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.667
     },
     {
       "group": "aeration",
       "phrases": [
-        "lake aeration system",
-        "floating aerator"
+        "floating aerator",
+        "lake aeration system"
       ],
-      "query": "(\"lake aeration system\" OR \"floating aerator\") (tender OR bid OR RFP OR NIT) India",
+      "query": "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India",
       "reviewed_yield": 0.667
     }
   ],
@@ -200,14 +200,14 @@
         "aeration"
       ],
       "queries": [
-        "(\"PLC fountain control\" OR \"fountain control panel\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"programmable fountain\" OR \"musical fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"architectural fountain\" OR \"decorative fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"multimedia water show\" OR \"water screen projection\") (tender OR bid OR RFP OR NIT) India",
-        "(\"laser show\" OR \"synchronized light and sound show\") (tender OR bid OR RFP OR NIT) India",
-        "(\"fountain renovation\" OR \"fountain rehabilitation\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake aeration system\" OR \"floating aerator\") (tender OR bid OR RFP OR NIT) India"
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
       ],
       "evidence_kind": [
         "search snippet"
@@ -221,7 +221,16 @@
       "possibly_expired": false,
       "eligibility": "not assessed",
       "source_verified": false,
-      "change": "unchanged"
+      "ranking_cache": {
+        "hit": false,
+        "key": "d11684cc93fd1eb1098479e749b78dfe62487e9bb8e5b3fd77d7fc879734db23",
+        "ranked_at": "2026-11-13T07:00:59.980156+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
     },
     {
       "id": "f87bb0a07e6bcb75d24a",
@@ -245,14 +254,14 @@
         "aeration"
       ],
       "queries": [
-        "(\"PLC fountain control\" OR \"fountain control panel\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"programmable fountain\" OR \"musical fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"architectural fountain\" OR \"decorative fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"multimedia water show\" OR \"water screen projection\") (tender OR bid OR RFP OR NIT) India",
-        "(\"laser show\" OR \"synchronized light and sound show\") (tender OR bid OR RFP OR NIT) India",
-        "(\"fountain renovation\" OR \"fountain rehabilitation\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake aeration system\" OR \"floating aerator\") (tender OR bid OR RFP OR NIT) India"
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
       ],
       "evidence_kind": [
         "search snippet"
@@ -266,7 +275,16 @@
       "possibly_expired": false,
       "eligibility": "not assessed",
       "source_verified": false,
-      "change": "unchanged"
+      "ranking_cache": {
+        "hit": false,
+        "key": "53e75cb5ed56c6d7da745d55373a34a20400ab013005e2c0c8c3e0e84fcff4a8",
+        "ranked_at": "2026-11-13T07:00:59.981106+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
     },
     {
       "id": "64f5c7be9c2d7ed807bc",
@@ -290,14 +308,14 @@
         "aeration"
       ],
       "queries": [
-        "(\"PLC fountain control\" OR \"fountain control panel\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"programmable fountain\" OR \"musical fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"architectural fountain\" OR \"decorative fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"multimedia water show\" OR \"water screen projection\") (tender OR bid OR RFP OR NIT) India",
-        "(\"laser show\" OR \"synchronized light and sound show\") (tender OR bid OR RFP OR NIT) India",
-        "(\"fountain renovation\" OR \"fountain rehabilitation\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake aeration system\" OR \"floating aerator\") (tender OR bid OR RFP OR NIT) India"
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
       ],
       "evidence_kind": [
         "search snippet"
@@ -311,7 +329,16 @@
       "possibly_expired": false,
       "eligibility": "not assessed",
       "source_verified": false,
-      "change": "unchanged"
+      "ranking_cache": {
+        "hit": false,
+        "key": "c8cbbf5fee5f4da07a4fb9036f78b86e351eb25d23e5bbef2d0d5c380cf5d2e4",
+        "ranked_at": "2026-11-13T07:00:59.982884+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
     },
     {
       "id": "dc01f6ba50208ddadfa6",
@@ -335,14 +362,14 @@
         "aeration"
       ],
       "queries": [
-        "(\"PLC fountain control\" OR \"fountain control panel\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"programmable fountain\" OR \"musical fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"architectural fountain\" OR \"decorative fountain\") (tender OR bid OR RFP OR NIT) India",
-        "(\"multimedia water show\" OR \"water screen projection\") (tender OR bid OR RFP OR NIT) India",
-        "(\"laser show\" OR \"synchronized light and sound show\") (tender OR bid OR RFP OR NIT) India",
-        "(\"fountain renovation\" OR \"fountain rehabilitation\") (tender OR bid OR RFP OR NIT) India",
-        "(\"lake aeration system\" OR \"floating aerator\") (tender OR bid OR RFP OR NIT) India"
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
       ],
       "evidence_kind": [
         "search snippet"
@@ -356,20 +383,42 @@
       "possibly_expired": false,
       "eligibility": "not assessed",
       "source_verified": false,
-      "change": "unchanged"
+      "ranking_cache": {
+        "hit": false,
+        "key": "645ec12a55ac5ad97cbc5f51b8b5818b5503188f097beb1d42dc19f5ec341290",
+        "ranked_at": "2026-11-13T07:00:59.981816+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
     }
   ],
+  "ranking_cache": {
+    "hits": 0,
+    "misses": 4,
+    "writes": 4,
+    "signature": "e1079de194e6cf586c48e4e648332999d4a47bc83a7f61f2dd1530e3bb4819e1"
+  },
   "settings": {
     "provider": "codex",
-    "ranker": "ollama",
+    "ranker": "codex",
+    "ranker_model": "codex",
     "query_budget": 8
   },
   "timing": {
     "planning_seconds": 0.0,
     "search_seconds": 0.0,
     "ranking_seconds": 0.0,
-    "processing_seconds": 0.0
+    "processing_seconds": 0.01
   },
   "openai_usage": [],
-  "codex_search_calls": []
+  "codex_search_calls": [],
+  "codex_rank_calls": [],
+  "ranking_order": [
+    "match score descending",
+    "stated INR value descending",
+    "title"
+  ]
 }

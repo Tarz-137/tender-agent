@@ -87,7 +87,12 @@ function render() {
   $('#query-list').innerHTML = report?.queries.map(query => `<div class="query-row"><strong>${esc(name(query.group))}</strong><code>${esc(query.query)}</code></div>`).join('') || '<p class="subtle">Run discovery to generate a keyword plan.</p>';
   $('#history-list').innerHTML = history.length ? history.map(run => `<div class="history-row"><span class="source-icon">◷</span><div><strong>${esc(dateLabel(run.created_at))}</strong><p>${run.count} discovered · ${run.shortlisted} shortlisted · ${esc(run.health)}</p></div><button class="button secondary" data-open-run="${esc(run.id)}">View run ↗</button></div>`).join('') : '<div class="empty">Your discovery runs will appear here.</div>';
   $('#connections').innerHTML = [['OpenAI', configuration.gpt_model, configuration.openai_key], ['Ollama web search', 'Hosted search API', configuration.ollama_key]].map(([label, model, configured]) => `<div class="connection-row"><div>${esc(label)}<small>${esc(model)}</small></div><span class="badge ${configured ? 'shortlist' : 'review'}">${configured ? 'Key configured' : 'Key needed'}</span></div>`).join('') + `<div class="connection-row"><div>Optional Ollama ranking model<small>${esc(configuration.ollama_model)}</small></div><span class="badge">Availability not checked</span></div>`;
-  $('#connections').insertAdjacentHTML('afterbegin', `<div class="connection-row"><div>Codex search & ranking<small>ChatGPT sign-in · no API key</small></div><span class="badge ${configuration.codex_cli ? 'shortlist' : 'review'}">${configuration.codex_cli ? 'CLI found; sign-in checked on run' : 'CLI not found'}</span></div>`);
+  const auth = state.data.codex_auth || {status:'unchecked', message:'Restart the dashboard to enable Codex connection setup.'};
+  $('#codex-auth-message').textContent = auth.message;
+  const authBusy = ['checking', 'signing_in'].includes(auth.status);
+  $('#codex-login').disabled = authBusy || auth.status === 'connected' || !state.data.codex_auth;
+  $('#codex-check').disabled = authBusy || !state.data.codex_auth;
+  $('#codex-login').textContent = auth.status === 'connected' ? 'Connected with ChatGPT' : auth.status === 'signing_in' ? 'Waiting for browser…' : 'Sign in with ChatGPT ↗';
   const running = job?.status === 'running';
   $('#new-run').disabled = running || state.starting;
   $('#job-panel').hidden = !job && !report?.issues.length;
@@ -164,3 +169,12 @@ $('#export').addEventListener('click', () => {
 });
 refresh();
 setInterval(refresh, 2500);
+
+$('#run-connections').addEventListener('click', () => {$('#run-dialog').close(); setView('settings');});
+for (const action of ['login', 'check']) {
+  $('#codex-' + action).addEventListener('click', async () => {
+    $('#codex-login').disabled = true; $('#codex-check').disabled = true;
+    try {await api('/api/codex/' + action, {}); await refresh();}
+    catch (error) {toast(error.message); render();}
+  });
+}

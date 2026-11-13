@@ -14,6 +14,7 @@ import sqlite3
 import threading
 from urllib.parse import parse_qs, urlsplit
 
+from discovery_mvp.codex_auth import CodexAuth
 from discovery_mvp.engine import candidate_id
 from discovery_mvp.codex_search import cli_path
 from discovery_mvp.values import prepare_report
@@ -29,6 +30,7 @@ class Dashboard:
         self.job = None
         self.token = secrets.token_urlsafe(32)
         self.stores = {}
+        self.auth = CodexAuth()
 
     def store(self, mode):
         with self.guard:
@@ -67,6 +69,7 @@ class Dashboard:
                 "profile": read_json(ROOT / "discovery_mvp/profile.json", {}),
                 "job": job, "token": self.token,
                 "storage": {"backend": "sqlite", "path": str(store.path)},
+                "codex_auth": self.auth.snapshot(),
                 "configuration": {"openai_key": bool(os.getenv("OPENAI_API_KEY")),
                                   "codex_cli": bool(cli_path()),
                                   "ollama_key": bool(os.getenv("OLLAMA_API_KEY")),
@@ -178,6 +181,10 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(self.rfile.read(size))
             if not isinstance(data, dict):
                 raise ValueError("Expected a JSON object")
+            if self.path == "/api/codex/check":
+                return self.send(202, self.server.dashboard.auth.start("check"))
+            if self.path == "/api/codex/login":
+                return self.send(202, self.server.dashboard.auth.start("login"))
             if self.path == "/api/run":
                 return self.send(202, self.server.dashboard.start(data))
             if self.path == "/api/feedback":
@@ -203,6 +210,7 @@ def main():
     except KeyboardInterrupt:
         pass
     finally:
+        server.dashboard.auth.close()
         server.server_close()
 
 

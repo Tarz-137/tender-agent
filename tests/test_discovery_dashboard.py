@@ -107,6 +107,17 @@ class DashboardTests(unittest.TestCase):
             self.assertEqual(self.request('/api/run', {'mode': 'demo'}, headers)[0], 202)
             start.assert_called_once_with({'mode': 'demo'})
 
+    def test_codex_login_routes_require_token_and_trusted_origin(self):
+        for action in ('login', 'check'):
+            path = '/api/codex/' + action
+            self.assertEqual(self.request(path, {})[0], 403)
+            headers = {'X-Dashboard-Token': self.dashboard.token, 'Origin': 'https://untrusted.example'}
+            self.assertEqual(self.request(path, {}, headers)[0], 403)
+            headers['Origin'] = self.base
+            with patch.object(self.dashboard.auth, 'start', return_value={'status': 'checking'}) as start:
+                self.assertEqual(self.request(path, {}, headers)[0], 202)
+                start.assert_called_once_with(action)
+
     def test_feedback_roundtrip_is_saved_to_correct_workspace(self):
         directory = self.dashboard.directory('demo')
         directory.mkdir(parents=True)

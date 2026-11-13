@@ -47,6 +47,36 @@ Open [the local dashboard](http://127.0.0.1:8765). Use `--port 8766` if the defa
 port is occupied. Keep this command running while using the dashboard; Ctrl+C
 stops the dashboard server. It binds only to the local computer.
 
+### Connect Codex from the dashboard
+
+For a fresh clone, install Python 3.10+ and the [Codex CLI](https://learn.chatgpt.com/docs/cli).
+If Node.js/npm is installed, run `npm install -g @openai/codex` in Terminal.
+Start the dashboard from a normal terminal in the repository root:
+
+```sh
+python3 -B -m discovery_mvp.server
+```
+
+On Windows use `python` instead of `python3`. Open http://127.0.0.1:8765,
+then **Setup & scheduling → Check connection**. If signed out, select
+**Sign in with ChatGPT** and finish in your default browser on the same computer.
+The panel updates automatically after login; no dashboard restart is needed.
+The discovery dialog also links to connection setup.
+
+Codex manages OAuth and stores credentials in its own local credential store.
+The dashboard never receives passwords or returns CLI credential output to the browser.
+Only one connection action can run at once. Browser sign-in times out after three minutes;
+retry if needed. If no browser opens, run `codex login` in Terminal, then select
+**Check connection**. No sign-out action is provided because the credentials may
+also be used by other Codex applications on this computer.
+
+If the CLI is missing or broken, install/repair it or set `CODEX_CLI_PATH` to its
+executable in `discovery_mvp/.env`, then restart the dashboard. Connection status
+checks authentication only: network access, model availability and usage limits
+can still prevent discovery. Run the dashboard from a normal terminal with access
+to Codex's local state and the internet; a restricted parent process can prevent
+Codex from running even when sign-in succeeds.
+
 The dashboard supports:
 
 - Separate demo and live workspaces, with explicit synthetic-data labels.

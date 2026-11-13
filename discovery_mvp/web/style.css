@@ -7,3 +7,8 @@
 .tender-value{font-size:14px;font-weight:650;color:#216e59;margin:3px 0 12px}.tender-value span{display:block;font-size:8px;font-weight:400;color:#95a29a;margin-top:2px}.filters select#sort{max-width:155px}
 
 .context-bar{flex-wrap:wrap}.filters{flex-wrap:wrap}#lifecycle-filter{max-width:150px}.search-box{min-width:170px}.detail-meta{overflow-wrap:anywhere}
+
+.codex-connection {padding: 0 0 22px; margin-bottom: 18px; border-bottom: 1px solid #e1e7e5;}
+.codex-connection .heading-actions {flex-wrap: wrap;}
+.codex-connection details {margin-top: 16px;}
+.codex-connection summary {cursor: pointer;}
