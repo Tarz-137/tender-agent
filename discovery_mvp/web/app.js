@@ -14,6 +14,12 @@ function name(value) {return String(value).replaceAll('_', ' ');}
 function providerName(value) {return value === 'codex' ? 'Codex search' : value.includes('gpt') ? 'GPT search' : 'Ollama search';}
 function durationLabel(seconds) {return seconds === undefined ? '' : `${Math.floor(seconds / 60)}m ${Math.round(seconds % 60)}s`;}
 function matchThenValue(a, b) {return b.score-a.score || (b.tender_value_inr ?? -1)-(a.tender_value_inr ?? -1) || a.title.localeCompare(b.title);}
+function priceOnly(a, b, descending) {
+  const left = a.tender_value_inr, right = b.tender_value_inr;
+  const leftKnown = Number.isFinite(left), rightKnown = Number.isFinite(right);
+  if (leftKnown !== rightKnown) return leftKnown ? -1 : 1;
+  return (leftKnown ? (descending ? right-left : left-right) : 0) || a.title.localeCompare(b.title);
+}
 function toast(message) {$('#toast').textContent = message; $('#toast').hidden = false; clearTimeout(toast.timer); toast.timer = setTimeout(() => $('#toast').hidden = true, 3500);}
 function banner(message) {$('#error-banner').textContent = message || ''; $('#error-banner').hidden = !message;}
 async function api(path, data) {
@@ -105,7 +111,7 @@ function renderCandidates() {
     (lifecycle === 'all' || item.discovery_status === lifecycle) &&
     (!query || [item.title, item.reason, ...item.snippets, ...item.groups].join(' ').toLowerCase().includes(query)));
   const sort = $('#sort').value;
-  candidates.sort((a,b) => sort === 'title' ? a.title.localeCompare(b.title) : sort === 'new' ? (b.change === 'new') - (a.change === 'new') || matchThenValue(a,b) : matchThenValue(a,b));
+  candidates.sort((a,b) => sort === 'price-desc' ? priceOnly(a,b,true) : sort === 'price-asc' ? priceOnly(a,b,false) : sort === 'title' ? a.title.localeCompare(b.title) : sort === 'new' ? (b.change === 'new') - (a.change === 'new') || matchThenValue(a,b) : matchThenValue(a,b));
   $('#list-count').textContent = `Showing ${candidates.length} of ${all.length} opportunities`;
   $('#candidate-list').innerHTML = candidates.length ? candidates.map(item => {
     const hostname = new URL(safeUrl(item.url), location.origin).hostname;

@@ -75,6 +75,20 @@ match score descending, then tender value descending among equal matches.
 Unknown values come last within the same match score. Saved history is enriched
 when opened, and future discovery prompts request project values when available.
 
+For price-only ordering, choose **Price: high to low** or **Price: low to high**
+in the dashboard's sort menu. These modes ignore match score and place unknown
+or conflicting values last. Sorting combines with the existing search, status
+and provider filters and does not alter saved assessments.
+
+In SQLite, the corresponding price-only query is:
+
+```sql
+SELECT * FROM opportunities ORDER BY value_inr DESC;
+```
+
+`ORDER BY` sorts rows. The dashboard sorts the loaded opportunities in JavaScript.
+Run its price-sort regression tests with `node --test tests/test_price_sort.cjs`.
+
 ## Cumulative opportunity library
 
 The dashboard defaults to **Opportunity library**, which retains discoveries
