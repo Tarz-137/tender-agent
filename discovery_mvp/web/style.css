@@ -7,3 +7,5 @@
 .tender-value{font-size:14px;font-weight:650;color:#216e59;margin:3px 0 12px}.tender-value span{display:block;font-size:8px;font-weight:400;color:#95a29a;margin-top:2px}.filters select#sort{max-width:155px}
 
 .context-bar{flex-wrap:wrap}.filters{flex-wrap:wrap}#lifecycle-filter{max-width:150px}.search-box{min-width:170px}.detail-meta{overflow-wrap:anywhere}
+
+.discovery-date{display:flex;align-items:center;gap:8px;font-size:11px;color:#42665a}.discovery-date input{border:1px solid #dce5e0;border-radius:5px;padding:9px;background:#fff;color:#42665a;font:inherit;min-width:140px}

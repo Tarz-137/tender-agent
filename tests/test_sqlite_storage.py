@@ -77,6 +77,79 @@ class SQLiteStorageTests(unittest.TestCase):
             self.assertEqual(reopened.library()['candidates'][0]['discovery_status'], 'rediscovered')
             self.assertEqual(reopened.integrity_check(), {'integrity': 'ok', 'foreign_key_errors': []})
 
+    def test_discovery_date_uses_all_daily_observations_and_ist_boundaries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            store = Store(directory)
+            # The same opportunity appears on three days, twice on the middle day.
+            for index, stamp in enumerate((
+                '2026-11-01T10:00:00+05:30',
+                '2026-11-01T18:30:00+00:00',  # Midnight Nov 2 IST, inclusive.
+                '2026-11-02T12:00:00+05:30',
+                '2026-11-03T10:00:00+05:30',
+            )):
+                store.save_run(f'run-{index}', self.report(stamp), {})
+            excluded = self.report('2026-11-02T18:30:00+00:00', 'outside')
+            excluded['candidates'][0]['snippets'] = ['A separate tender']
+            store.save_run('outside', excluded, {})  # Midnight Nov 3, exclusive.
+            result = store.library('2026-11-02')
+            self.assertEqual(len(result['candidates']), 1)
+            item = result['candidates'][0]
+            self.assertEqual(item['record_ids'], ['one'])
+            self.assertTrue(item['first_seen'].startswith('2026-11-01'))
+            self.assertTrue(item['last_seen'].startswith('2026-11-03'))
+            self.assertEqual(result['library_summary']['total'], 1)
+            self.assertEqual(result['discovery_date'], '2026-11-02')
+            self.assertEqual(store.library('2026-11-04')['candidates'], [])
+            self.assertEqual(len(store.library()['candidates']), 2)
+
+    def test_discovery_date_supports_legacy_dates_and_naive_ist_times(self):
+        for stamp in ('2026-11-02', '2026-11-02T23:59:59'):
+            with self.subTest(stamp=stamp), tempfile.TemporaryDirectory() as directory:
+                store = Store(directory)
+                store.save_run('legacy', self.report(stamp), {})
+                self.assertEqual(len(store.library('2026-11-02')['candidates']), 1)
+                self.assertEqual(store.library('2026-11-03')['candidates'], [])
+
+    def test_discovery_date_validation_even_without_saved_runs(self):
+        with tempfile.TemporaryDirectory() as directory:
+            store = Store(directory)
+            for value in ('2026-02-30', '2026-1-01', "2026-11-01' OR 1=1", ''):
+                with self.subTest(value=value), self.assertRaises(ValueError):
+                    store.library(value)
+            self.assertIsNone(store.library('2026-11-01'))
+
+    def test_library_upgrade_rebuilds_saved_runs_without_changing_history_or_feedback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            store = Store(directory)
+            first = self.report()
+            first['candidates'][0].update(
+                title='Design supply installation of musical fountain with multimedia show at Kumbh Mela Haridwar',
+                deadline='2026-11-16',
+                snippets=['2026_HRDA_101761_1; estimated value INR 3.7314 crore'])
+            mirror = self.report('2026-11-02T10:00:00+05:30', 'mirror')
+            mirror['candidates'][0].update(
+                title='Musical fountain and multimedia show for Kumbh Mela Haridwar',
+                deadline='2026-11-16', snippets=['Estimated value INR 3.73 crore'])
+            with patch('discovery_mvp.library.missing_id_match', return_value=False):
+                store.save_run('first', first, {})
+                store.save_run('second', mirror, {'feedback': {
+                    'one': {'label': 'relevant', 'updated_at': '2026-11-02'}}})
+            self.assertEqual(len(store.library()['candidates']), 2)
+            before_history, before_state = store.history(), store.state()
+            with store.connection(write=True) as connection:
+                store._set_meta(connection, 'library_version', 1)
+            upgraded = Store(directory)
+            self.assertEqual(len(upgraded.library()['candidates']), 1)
+            self.assertEqual(upgraded.library()['library_version'], 2)
+            self.assertEqual(upgraded.library('2026-11-02')['candidates'][0]['record_ids'], ['mirror', 'one'])
+            self.assertEqual(upgraded.history(), before_history)
+            self.assertEqual(upgraded.state(), before_state)
+            self.assertEqual(upgraded.report('first'), first)
+            self.assertEqual(upgraded.report('second'), mirror)
+            self.assertEqual(upgraded.integrity_check(), {'integrity': 'ok', 'foreign_key_errors': []})
+            with patch.object(Store, '_rebuild_library', side_effect=AssertionError('unnecessary rebuild')):
+                Store(directory)
+
     def test_backup_can_be_opened_independently(self):
         with tempfile.TemporaryDirectory() as directory:
             store = Store(directory)

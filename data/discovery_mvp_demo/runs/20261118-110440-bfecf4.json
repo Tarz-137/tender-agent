@@ -1,0 +1,424 @@
+{
+  "created_at": "2026-11-18T11:04:40.670238+05:30",
+  "mode": "demo (synthetic)",
+  "health": "ok",
+  "attempted_searches": 16,
+  "successful_searches": 16,
+  "queries": [
+    {
+      "group": "controls",
+      "phrases": [
+        "fountain control panel",
+        "fountain underwater lighting"
+      ],
+      "query": "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "bundled",
+      "phrases": [
+        "tourism infrastructure fountain",
+        "park development water feature"
+      ],
+      "query": "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "fountains",
+      "phrases": [
+        "musical fountain",
+        "dancing fountain"
+      ],
+      "query": "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.667
+    },
+    {
+      "group": "water_features",
+      "phrases": [
+        "decorative fountain",
+        "landscape water feature"
+      ],
+      "query": "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.667
+    },
+    {
+      "group": "multimedia",
+      "phrases": [
+        "water screen projection",
+        "projection mapping"
+      ],
+      "query": "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.667
+    },
+    {
+      "group": "shows",
+      "phrases": [
+        "synchronized light and sound show",
+        "interactive multimedia installation"
+      ],
+      "query": "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.667
+    },
+    {
+      "group": "maintenance",
+      "phrases": [
+        "fountain rehabilitation",
+        "fountain operation and maintenance"
+      ],
+      "query": "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.667
+    },
+    {
+      "group": "aeration",
+      "phrases": [
+        "floating aerator",
+        "lake aeration system"
+      ],
+      "query": "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.667
+    }
+  ],
+  "search_log": [
+    {
+      "provider": "demo-gpt",
+      "group": "controls",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "controls",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "bundled",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "bundled",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "fountains",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "fountains",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "water_features",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "water_features",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "multimedia",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "multimedia",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "shows",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "shows",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "maintenance",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "maintenance",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-gpt",
+      "group": "aeration",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "demo-ollama",
+      "group": "aeration",
+      "status": "ok",
+      "result_count": 4
+    }
+  ],
+  "issues": [],
+  "candidates": [
+    {
+      "id": "2861faac53f18c82ead8",
+      "url": "https://example.com/demo/fountain",
+      "title": "DEMO: Musical fountain design and installation",
+      "snippets": [
+        "Synthetic tender: design, supply and commission a musical fountain. Deadline not supplied."
+      ],
+      "providers": [
+        "demo-gpt",
+        "demo-ollama"
+      ],
+      "groups": [
+        "controls",
+        "bundled",
+        "fountains",
+        "water_features",
+        "multimedia",
+        "shows",
+        "maintenance",
+        "aeration"
+      ],
+      "queries": [
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "search snippet"
+      ],
+      "score": 0.95,
+      "reason": "Synthetic example: direct capability match; eligibility and deadline need checking.",
+      "evidence": "Synthetic tender: design, supply and commission a musical fountain. Deadline not supplied.",
+      "status": "shortlist",
+      "deadline": null,
+      "deadline_status": "unknown",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "e0f1a8fac855e53f34be5a22e9a075cc91e851a9db57b92fdd7097ef55145f6d",
+        "ranked_at": "2026-11-18T05:34:40.686110+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "f87bb0a07e6bcb75d24a",
+      "url": "https://example.com/demo/tourism",
+      "title": "DEMO: Tourism precinct development",
+      "snippets": [
+        "Synthetic tender: tourism precinct with a multimedia water show subsystem. Full scope requires review."
+      ],
+      "providers": [
+        "demo-gpt",
+        "demo-ollama"
+      ],
+      "groups": [
+        "controls",
+        "bundled",
+        "fountains",
+        "water_features",
+        "multimedia",
+        "shows",
+        "maintenance",
+        "aeration"
+      ],
+      "queries": [
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "search snippet"
+      ],
+      "score": 0.58,
+      "reason": "Synthetic example: partial subsystem opportunity; inspect full scope.",
+      "evidence": "Synthetic tender: tourism precinct with a multimedia water show subsystem. Full scope requires review.",
+      "status": "review",
+      "deadline": null,
+      "deadline_status": "unknown",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "bf11dcec484c9d8b5204dd92eef5d558d11463a5a0e7a2bc260a4118f3225756",
+        "ranked_at": "2026-11-18T05:34:40.691172+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "64f5c7be9c2d7ed807bc",
+      "url": "https://example.com/demo/catalogue",
+      "title": "DEMO: Fountain manufacturer catalogue",
+      "snippets": [
+        "Synthetic product catalogue for decorative fountains. Not a procurement notice."
+      ],
+      "providers": [
+        "demo-gpt",
+        "demo-ollama"
+      ],
+      "groups": [
+        "controls",
+        "bundled",
+        "fountains",
+        "water_features",
+        "multimedia",
+        "shows",
+        "maintenance",
+        "aeration"
+      ],
+      "queries": [
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "search snippet"
+      ],
+      "score": 0.1,
+      "reason": "Synthetic example: no relevant procurement opportunity demonstrated.",
+      "evidence": "Synthetic product catalogue for decorative fountains. Not a procurement notice.",
+      "status": "rejected",
+      "deadline": null,
+      "deadline_status": "unknown",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "becfac876c7624aa9b9f6957c3396a0f0ac5c44cacd8e34ec835e925d29fa2ce",
+        "ranked_at": "2026-11-18T05:34:40.696720+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "dc01f6ba50208ddadfa6",
+      "url": "https://example.com/demo/pumps",
+      "title": "DEMO: Irrigation pump supply",
+      "snippets": [
+        "Synthetic tender for agricultural irrigation pumps. No fountain or entertainment scope."
+      ],
+      "providers": [
+        "demo-gpt",
+        "demo-ollama"
+      ],
+      "groups": [
+        "controls",
+        "bundled",
+        "fountains",
+        "water_features",
+        "multimedia",
+        "shows",
+        "maintenance",
+        "aeration"
+      ],
+      "queries": [
+        "(\"fountain control panel\" OR \"fountain underwater lighting\") (tender OR bid OR RFP OR NIT) India",
+        "(\"tourism infrastructure fountain\" OR \"park development water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"musical fountain\" OR \"dancing fountain\") (tender OR bid OR RFP OR NIT) India",
+        "(\"decorative fountain\" OR \"landscape water feature\") (tender OR bid OR RFP OR NIT) India",
+        "(\"water screen projection\" OR \"projection mapping\") (tender OR bid OR RFP OR NIT) India",
+        "(\"synchronized light and sound show\" OR \"interactive multimedia installation\") (tender OR bid OR RFP OR NIT) India",
+        "(\"fountain rehabilitation\" OR \"fountain operation and maintenance\") (tender OR bid OR RFP OR NIT) India",
+        "(\"floating aerator\" OR \"lake aeration system\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "search snippet"
+      ],
+      "score": 0.1,
+      "reason": "Synthetic example: no relevant procurement opportunity demonstrated.",
+      "evidence": "Synthetic tender for agricultural irrigation pumps. No fountain or entertainment scope.",
+      "status": "rejected",
+      "deadline": null,
+      "deadline_status": "unknown",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "43c0a051750b21342616010b0187777fd296323be71818a20436759a3c2c1735",
+        "ranked_at": "2026-11-18T05:34:40.693952+00:00"
+      },
+      "change": "unchanged",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    }
+  ],
+  "ranking_cache": {
+    "hits": 0,
+    "misses": 4,
+    "writes": 4,
+    "signature": "8ff1d9cd5a69d6c38989cb351ff9f09f162fe295c77dc69687c7661e7c13a3b1"
+  },
+  "settings": {
+    "provider": "codex",
+    "ranker": "ollama",
+    "ranker_model": "ollama",
+    "query_budget": 8
+  },
+  "timing": {
+    "planning_seconds": 0.0,
+    "search_seconds": 0.0,
+    "ranking_seconds": 0.02,
+    "processing_seconds": 0.03
+  },
+  "openai_usage": [],
+  "codex_search_calls": [],
+  "codex_rank_calls": [],
+  "ranking_order": [
+    "match score descending",
+    "stated INR value descending",
+    "title"
+  ]
+}

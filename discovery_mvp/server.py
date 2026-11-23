@@ -41,16 +41,18 @@ class Dashboard:
             raise ValueError("Mode must be demo or live")
         return ROOT / "data" / ("discovery_mvp_demo" if mode == "demo" else "discovery_mvp")
 
-    def snapshot(self, mode, run_id=None, scope='library'):
+    def snapshot(self, mode, run_id=None, scope='library', discovery_date=None):
         if scope not in ('library', 'run'):
             raise ValueError('Scope must be library or run')
+        if discovery_date is not None and (scope != 'library' or run_id):
+            raise ValueError('Discovery date requires the library view')
         directory = self.directory(mode)
         if run_id and not re.fullmatch(r"\d{8}-\d{6}-[a-f0-9]{6}", run_id):
             raise ValueError("Invalid run ID")
         store = self.store(mode)
         report = prepare_report(store.report(run_id))
         if not run_id and scope == 'library':
-            report = store.library()
+            report = store.library(discovery_date)
         history = store.history()
         state = store.state()
         with self.guard:
@@ -153,7 +155,7 @@ class Handler(BaseHTTPRequestHandler):
                 query = parse_qs(parts.query)
                 return self.send(200, self.server.dashboard.snapshot(
                     query.get("mode", ["demo"])[0], query.get("run", [None])[0],
-                    query.get("scope", ['library'])[0]))
+                    query.get("scope", ['library'])[0], query.get('discovery_date', [None])[0]))
             files = {"/": ("index.html", "text/html; charset=utf-8"),
                      "/app.js": ("app.js", "text/javascript; charset=utf-8"),
                      "/style.css": ("style.css", "text/css; charset=utf-8")}

@@ -82,6 +82,24 @@ class DashboardTests(unittest.TestCase):
         historical_view = self.request('/api/state?mode=live&run=20261101-100000-aaaaaa')[1]['report']
         self.assertEqual(historical_view['candidates'][0]['id'], 'old')
 
+    def test_discovery_date_api_filters_library_and_validates_requests(self):
+        store = self.dashboard.store('live')
+        for index, day in enumerate(('01', '02')):
+            store.save_run(f'202611{day}-100000-aaaaaa', {
+                'created_at': f'2026-11-{day}T10:00:00+05:30', 'health': 'ok',
+                'candidates': [{'id': day, 'title': day, 'url': 'https://example.com/' + day,
+                                'snippets': [], 'score': .9, 'status': 'shortlist'}]}, {})
+        code, data = self.request('/api/state?mode=live&discovery_date=2026-11-01')
+        self.assertEqual(code, 200)
+        self.assertEqual([item['title'] for item in data['report']['candidates']], ['01'])
+        self.assertEqual(data['report']['library_summary']['total'], 1)
+        self.assertEqual(self.request('/api/state?mode=live&discovery_date=2026-11-03')[1]['report']['candidates'], [])
+        self.assertIsNone(self.request('/api/state?mode=demo&discovery_date=2026-11-01')[1]['report'])
+        for query in ('discovery_date=2026-02-30', 'discovery_date=invalid',
+                      'scope=run&discovery_date=2026-11-01',
+                      'run=20261101-100000-aaaaaa&discovery_date=2026-11-01'):
+            self.assertEqual(self.request('/api/state?mode=live&' + query)[0], 400)
+
     def test_feedback_follows_merged_source_records(self):
         directory = self.dashboard.directory('live')
         directory.mkdir(parents=True)

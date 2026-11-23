@@ -1,0 +1,1622 @@
+{
+  "created_at": "2026-11-12T10:40:38.236034+05:30",
+  "mode": "live",
+  "health": "ok",
+  "attempted_searches": 8,
+  "successful_searches": 8,
+  "queries": [
+    {
+      "group": "shows",
+      "phrases": [
+        "interactive multimedia installation",
+        "laser show",
+        "laser show system supply tender",
+        "synchronized light and sound show installation tender"
+      ],
+      "query": "(\"interactive multimedia installation\" OR \"laser show\" OR \"laser show system supply tender\" OR \"synchronized light and sound show installation tender\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "maintenance",
+      "phrases": [
+        "fountain operation and maintenance",
+        "fountain renovation",
+        "fountain rehabilitation works tender",
+        "fountain operation and maintenance contract"
+      ],
+      "query": "(\"fountain operation and maintenance\" OR \"fountain renovation\" OR \"fountain rehabilitation works tender\" OR \"fountain operation and maintenance contract\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "aeration",
+      "phrases": [
+        "floating aerator",
+        "lake aeration system",
+        "floating aerator supply and installation",
+        "lake aeration system procurement"
+      ],
+      "query": "(\"floating aerator\" OR \"lake aeration system\" OR \"floating aerator supply and installation\" OR \"lake aeration system procurement\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "controls",
+      "phrases": [
+        "PLC fountain control",
+        "fountain control panel",
+        "PLC fountain control panel supply tender",
+        "fountain underwater lighting supply and installation"
+      ],
+      "query": "(\"PLC fountain control\" OR \"fountain control panel\" OR \"PLC fountain control panel supply tender\" OR \"fountain underwater lighting supply and installation\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "bundled",
+      "phrases": [
+        "lake beautification fountain",
+        "tourism infrastructure fountain",
+        "tourism infrastructure fountain turnkey tender",
+        "lake beautification fountain installation tender"
+      ],
+      "query": "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\" OR \"tourism infrastructure fountain turnkey tender\" OR \"lake beautification fountain installation tender\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "fountains",
+      "phrases": [
+        "programmable fountain",
+        "musical fountain",
+        "musical fountain supply and installation",
+        "programmable dancing fountain turnkey tender"
+      ],
+      "query": "(\"programmable fountain\" OR \"musical fountain\" OR \"musical fountain supply and installation\" OR \"programmable dancing fountain turnkey tender\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "water_features",
+      "phrases": [
+        "architectural fountain",
+        "decorative fountain",
+        "architectural fountain design and construction",
+        "decorative landscape water feature installation tender"
+      ],
+      "query": "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    },
+    {
+      "group": "multimedia",
+      "phrases": [
+        "multimedia water show",
+        "water screen projection",
+        "water screen projection system supply tender",
+        "multimedia water show turnkey procurement"
+      ],
+      "query": "(\"multimedia water show\" OR \"water screen projection\" OR \"water screen projection system supply tender\" OR \"multimedia water show turnkey procurement\") (tender OR bid OR RFP OR NIT) India",
+      "reviewed_yield": 0.5
+    }
+  ],
+  "search_log": [
+    {
+      "provider": "codex",
+      "group": "shows",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "codex",
+      "group": "maintenance",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "codex",
+      "group": "aeration",
+      "status": "ok",
+      "result_count": 1
+    },
+    {
+      "provider": "codex",
+      "group": "controls",
+      "status": "ok",
+      "result_count": 2
+    },
+    {
+      "provider": "codex",
+      "group": "bundled",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "codex",
+      "group": "fountains",
+      "status": "ok",
+      "result_count": 4
+    },
+    {
+      "provider": "codex",
+      "group": "water_features",
+      "status": "ok",
+      "result_count": 5
+    },
+    {
+      "provider": "codex",
+      "group": "multimedia",
+      "status": "ok",
+      "result_count": 2
+    }
+  ],
+  "issues": [],
+  "candidates": [
+    {
+      "id": "20043eac36720d4f50c7",
+      "url": "https://app.atlenza.com/tender/designing-supplying-installation-and-commissioning-of-musical-fountain-0d486cfe098c44f5b009c06ac583319c",
+      "title": "Design, supply, installation and commissioning of musical fountain with multimedia water-screen show at Kumbh Mela 2027, Haridwar",
+      "snippets": [
+        "Specific tender notice for Haridwar-Roorkee Development Authority, tender ID 2026_HRDA_101761_1, covering design, supply, installation and commissioning of a musical fountain with multimedia show on a water screen. Bid deadline: 16 November 2026, 3:00 pm IST, following extension. Estimated value: ₹3.7314 crore."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "multimedia"
+      ],
+      "queries": [
+        "(\"multimedia water show\" OR \"water screen projection\" OR \"water screen projection system supply tender\" OR \"multimedia water show turnkey procurement\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 1,
+      "reason": "Directly matches musical fountain and multimedia water-screen show capabilities. A specific authority and tender ID establish a procurement notice; eligibility is not established.",
+      "evidence": "covering design, supply, installation and commissioning of a musical fountain with multimedia show on a water screen. Bid deadline: 16 November 2026, 3:00 pm IST, following extension.",
+      "status": "shortlist",
+      "deadline": "2026-11-16",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "f16fc4e4bcb3c7a57aa033a88491a4691bcacf80c4d5bfe45362df1dd51da4c1",
+        "ranked_at": "2026-11-12T05:24:45.820399+00:00"
+      },
+      "change": "changed",
+      "tender_value_inr": 37314000.0,
+      "tender_value_display": "₹3.73 crore",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹3.7314 crore"
+      ]
+    },
+    {
+      "id": "76ffb2dff5052a5b5e18",
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58268771/4847ba4ac862afd369358be22a0de9d5",
+      "title": "Musical fountain and multimedia water-screen show for Kumbh Mela 2027, Haridwar",
+      "snippets": [
+        "Specific tender notice reproduced by TenderDetail for design, supply, installation and commissioning of a musical fountain and multimedia water-screen show, including five years of operation and maintenance. A 6 November corrigendum extends submission to 16 November 2026. Estimated value: ₹3.73 crore."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "fountains"
+      ],
+      "queries": [
+        "(\"programmable fountain\" OR \"musical fountain\" OR \"musical fountain supply and installation\" OR \"programmable dancing fountain turnkey tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 1,
+      "reason": "The specific procurement directly matches musical fountains, multimedia water-screen shows, and fountain operation and maintenance. Technical specifications and eligibility are not supplied.",
+      "evidence": "design, supply, installation and commissioning of a musical fountain and multimedia water-screen show, including five years of operation and maintenance.",
+      "status": "shortlist",
+      "deadline": "2026-11-16",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "4ac363517fa30ba54fa305d6f0f20ee042afd918e7afd3ebc674822efca43a42",
+        "ranked_at": "2026-11-12T05:23:30.440300+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 37300000.0,
+      "tender_value_display": "₹3.73 crore",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹3.73 crore"
+      ]
+    },
+    {
+      "id": "1ab29de281d9413fb0a6",
+      "url": "https://tenders.infralens.in/tender/designing-supplying-installation-and-commissioning-of-musical-fountain-2026-hrda-101761-1",
+      "title": "Musical Fountain with Multimedia Water-Screen Show at Kumbh Mela 2027, Haridwar",
+      "snippets": [
+        "Tender-specific mirror for Haridwar-Roorkee Development Authority; design, supply, installation and commissioning of a musical fountain with multimedia water-screen show. Tender ID: 2026_HRDA_101761_1. Search-indexed details report extension to 16 November 2026; fetched page retains 12 November, so the deadline needs official verification. Estimated value: ₹3.73 crore."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "bundled"
+      ],
+      "queries": [
+        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\" OR \"tourism infrastructure fountain turnkey tender\" OR \"lake beautification fountain installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.99,
+      "reason": "Direct match for musical fountains and multimedia water-screen shows in a specific procurement notice. The snippet reports conflicting deadline dates requiring official verification; eligibility is not established.",
+      "evidence": "design, supply, installation and commissioning of a musical fountain with multimedia water-screen show.",
+      "status": "shortlist",
+      "deadline": "2026-11-16",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "067aabd084bc0fe04e28acb344f9b05e36e28cce314f7664b2e3cab66b10d305",
+        "ranked_at": "2026-11-12T05:23:09.306210+00:00"
+      },
+      "change": "changed",
+      "tender_value_inr": 37300000.0,
+      "tender_value_display": "₹3.73 crore",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹3.73 crore"
+      ]
+    },
+    {
+      "id": "0a06c0a9f562fe8f8c67",
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58394999/630529a77ef4a1112ca4c8a6bd012b16",
+      "title": "Air Quality Improvement with Musical Fountain and Control Panel — GEM/2026/B/8244643, Nashik",
+      "snippets": [
+        "Specific third-party notice for Department of Defence procurement including a musical/dancing fountain, DMX or PLC-controlled valves, IP68 underwater RGBW lights, outdoor fountain control panel, installation and commissioning. Submission deadline: 25 November 2026. Estimated value: ₹50 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "controls"
+      ],
+      "queries": [
+        "(\"PLC fountain control\" OR \"fountain control panel\" OR \"PLC fountain control panel supply tender\" OR \"fountain underwater lighting supply and installation\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.99,
+      "reason": "Direct overlap with musical/dancing fountains, fountain controls, underwater lighting, installation and commissioning. This is a specific procurement notice, though the supplied third-party snippet does not establish eligibility or independently verify its details.",
+      "evidence": "Department of Defence procurement including a musical/dancing fountain, DMX or PLC-controlled valves, IP68 underwater RGBW lights, outdoor fountain control panel, installation and commissioning.",
+      "status": "shortlist",
+      "deadline": "2026-11-25",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "5bd8a5e63b4ef7e8f73a9775cd9a0bfca2a83c969ccf8f01cc67e1d447232355",
+        "ranked_at": "2026-11-12T05:22:27.164152+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 5000000.0,
+      "tender_value_display": "₹50.00 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹50 lakh"
+      ]
+    },
+    {
+      "id": "b1ed8a5c6013b2a9c0dd",
+      "url": "https://www.tendershark.com/details/punjab-tender/department-of-local-government/94fe1e42-babc-4529-ab1c-928ea39c6a0f",
+      "title": "P/F Floating Fountain in Satluj Park Lake, Nangal",
+      "snippets": [
+        "Tender-specific mirror for Municipal Council Nangal, Punjab; providing and fixing a floating fountain in Satluj Park Lake. Tender ID: 2026_DLG_177168_1. Reports an extended submission deadline of 17 November 2026, 5:00 pm; older sources show 5 November. Estimated value: ₹8.89 lakh.",
+        "Third-party notice for Municipal Council Nangal, Punjab, tender 2026_DLG_177168_1, for providing and fixing a floating fountain. Work period: 60 days. Corrigendum extends submission to 17 November 2026 at 5:00 PM. Estimated value: ₹8.89 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "bundled",
+        "water_features"
+      ],
+      "queries": [
+        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\" OR \"tourism infrastructure fountain turnkey tender\" OR \"lake beautification fountain installation tender\") (tender OR bid OR RFP OR NIT) India",
+        "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.99,
+      "reason": "Providing and fixing a floating fountain directly matches the floating fountain capability. A specific tender ID is supplied; the reported extended deadline is corroborated by both snippets, though the sources are third-party notices.",
+      "evidence": "Corrigendum extends submission to 17 November 2026 at 5:00 PM.",
+      "status": "shortlist",
+      "deadline": "2026-11-17",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "d246fbc242aa7853db98f8f3d78f8f8e2db80f56ca85e9877086034a01e7a7a1",
+        "ranked_at": "2026-11-12T05:22:58.116848+00:00"
+      },
+      "change": "changed",
+      "tender_value_inr": 889000.0,
+      "tender_value_display": "₹8.89 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹8.89 lakh"
+      ]
+    },
+    {
+      "id": "c68149fd0337f87c259c",
+      "url": "https://tenderkart.in/tender/79092272-b29a-4ca4-b930-6822b75648d9",
+      "title": "Beautification of Kidana Lake, Gandhidham Municipal Corporation",
+      "snippets": [
+        "Specific tender 361456, reference 11/2026-27, reproduced by Tenderkart. Lake beautification includes a programmable musical dry-deck fountain with synchronized variable-height jets, RGB lights, filtration and PLC controls. Submission deadline: 25 November 2026 at 6:00 pm. Estimated value: ₹9.9 crore for the overall lake project."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "fountains"
+      ],
+      "queries": [
+        "(\"programmable fountain\" OR \"musical fountain\" OR \"musical fountain supply and installation\" OR \"programmable dancing fountain turnkey tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.98,
+      "reason": "Direct overlap with programmable musical fountains, synchronized jets, lighting, PLC controls and lake beautification. A specific tender is identified, though fountain work is part of a broader lake project and eligibility is not established.",
+      "evidence": "Lake beautification includes a programmable musical dry-deck fountain with synchronized variable-height jets, RGB lights, filtration and PLC controls.",
+      "status": "shortlist",
+      "deadline": "2026-11-25",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "34cd0d0c802716be8ff62a1cca1dcb3f4681c2d28247f5901fafa914d18b0c43",
+        "ranked_at": "2026-11-12T05:23:56.894203+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 99000000.0,
+      "tender_value_display": "₹9.90 crore",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹9.9 crore"
+      ]
+    },
+    {
+      "id": "68d3c309700ed3416339",
+      "url": "https://www.tender247.com/tender-details/installation-of-a-laser-light-and-sound-show-105646394?-sound=&count=12&search_text=light-and-sound&searchtext=light-&tesd=10-12-2026",
+      "title": "Laser light and sound show at Shankaracharya Math, Gaya-Ji",
+      "snippets": [
+        "Bihar State Tourism Development Corporation procurement for installation of a laser light and sound show at Shankaracharya Math, Gaya district, with comprehensive operation and maintenance for five years. Estimated value: ₹8.27 crore. This specific secondary notice states a submission deadline of 10 December 2026; the government's indexed tender table also lists expiry on that date."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "shows"
+      ],
+      "queries": [
+        "(\"interactive multimedia installation\" OR \"laser show\" OR \"laser show system supply tender\" OR \"synchronized light and sound show installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.98,
+      "reason": "The specific procurement directly matches laser show and light and sound show capabilities, including installation and five-year maintenance. Technical specifications are not supplied, so detailed scope remains uncertain.",
+      "evidence": "procurement for installation of a laser light and sound show at Shankaracharya Math, Gaya district, with comprehensive operation and maintenance for five years.",
+      "status": "shortlist",
+      "deadline": "2026-12-10",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "e77b01ee54622ebe48157010e47e6a211878987fd4a363ba27c6ce6a0f76d944",
+        "ranked_at": "2026-11-12T05:21:07.368156+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 82700000.0,
+      "tender_value_display": "₹8.27 crore",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹8.27 crore"
+      ]
+    },
+    {
+      "id": "382fa98d98fa6f1c9e3c",
+      "url": "https://tenderkart.in/tender/4abd2541-6dcb-449e-a4ca-e67ef2abc883",
+      "title": "Additional show script for water-screen integrated floating musical fountains at Janeshwar Mishra Park, Lucknow",
+      "snippets": [
+        "Lucknow Development Authority tender 2026_LDAUP_1202568_1 for creation and presentation of one additional script for three existing water-screen integrated floating musical fountains. Includes a 25-minute customised theme show with Hindi writing, music, voiceovers, video and laser animation. Bid deadline: 16 November 2026, 3:00 pm. Estimated value: ₹95 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "multimedia"
+      ],
+      "queries": [
+        "(\"multimedia water show\" OR \"water screen projection\" OR \"water screen projection system supply tender\" OR \"multimedia water show turnkey procurement\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.98,
+      "reason": "Direct overlap with floating musical fountains, water-screen multimedia shows, and laser animation. This is a specific tender for show content and presentation; fountain hardware work is not stated.",
+      "evidence": "creation and presentation of one additional script for three existing water-screen integrated floating musical fountains.",
+      "status": "shortlist",
+      "deadline": "2026-11-16",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "1aebb74634ecf4afea23749fef46ff5a373e6fd02fec0362b3936860e4e2adbb",
+        "ranked_at": "2026-11-12T05:24:53.121955+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 9500000.0,
+      "tender_value_display": "₹95.00 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹95 lakh"
+      ]
+    },
+    {
+      "id": "3a3ec3589461c6a781f9",
+      "url": "https://tenderkart.in/tender/f824bea5-e88a-403d-b3fc-ffba2d06a9c0",
+      "title": "Upgradation, Repair and Renovation of Riverfront Flower Park Fountains with Five-Year O&M, Ahmedabad",
+      "snippets": [
+        "Specific third-party notice for SRFDCL tender 364016. Includes fountain renovation, multicolour LED lights, pump/LED lighting control panels and five-year operation and maintenance across four parks. Submission deadline: 18 November 2026, 6:00 pm. Estimated value: ₹93.5265934 lakh, plus GST."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "controls"
+      ],
+      "queries": [
+        "(\"PLC fountain control\" OR \"fountain control panel\" OR \"PLC fountain control panel supply tender\" OR \"fountain underwater lighting supply and installation\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.98,
+      "reason": "Direct overlap with fountain renovation, lighting, control panels, and operation and maintenance. This is a specific tender notice, though the supplied third-party summary does not establish eligibility or full technical requirements.",
+      "evidence": "Includes fountain renovation, multicolour LED lights, pump/LED lighting control panels and five-year operation and maintenance across four parks.",
+      "status": "shortlist",
+      "deadline": "2026-11-18",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "a7faf6b3a12a930c91976efa6746d3215b22539713f29f0fddbfc6dcaaabe9ba",
+        "ranked_at": "2026-11-12T05:22:36.072988+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 9352659.34,
+      "tender_value_display": "₹93.53 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹93.5265934 lakh"
+      ]
+    },
+    {
+      "id": "2fa5b50784043ad0c7ca",
+      "url": "https://tenderkart.in/tender/7d0c425b-9c3e-4fae-8c8e-eb84be0452fa",
+      "title": "3D projection mapping and laser show for Dev Deepawali 2026, Varanasi",
+      "snippets": [
+        "Uttar Pradesh Directorate of Tourism RFP for conceptualization, production, installation and maintenance of a 3D projection mapping and laser show at Dev Deepawali 2026, Varanasi. Tender ID: 2026_UPTDP_1201664_1; reference DD2026/Multimedia Show. Deadline: 12 November 2026, 12:00 noon, so potentially open only before that time today. Project value not stated. Source is a specific secondary notice."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "shows"
+      ],
+      "queries": [
+        "(\"interactive multimedia installation\" OR \"laser show\" OR \"laser show system supply tender\" OR \"synchronized light and sound show installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.97,
+      "reason": "Directly matches projection mapping and laser show capabilities, including installation and maintenance. A specific RFP is identified, though the secondary notice does not establish eligibility or whether the noon deadline has passed.",
+      "evidence": "Uttar Pradesh Directorate of Tourism RFP for conceptualization, production, installation and maintenance of a 3D projection mapping and laser show at Dev Deepawali 2026, Varanasi.",
+      "status": "shortlist",
+      "deadline": "2026-11-12",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "8f4a6f1705a2be2cafd5f210ccfa82109624d4992e0c68d3cf4dd9457860cf9c",
+        "ranked_at": "2026-11-12T05:21:16.838818+00:00"
+      },
+      "change": "changed",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "42d746dcabe957600ee2",
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58440385/6a7cd5c21e47f0d8006d8ec4abc28976",
+      "title": "Damru sculpture, decorative musical fountain and RGB lighting, Varanasi",
+      "snippets": [
+        "Nagar Nigam Varanasi tender 539/EE/E/M/Alok/2026-27, reproduced by TenderDetail. Scope includes a 10-foot sculpture, RCC fountain basin, pump, jets, underwater RGB lights and programmable tree lighting. Submission deadline: 18 November 2026. Project value is not disclosed on the page."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "fountains"
+      ],
+      "queries": [
+        "(\"programmable fountain\" OR \"musical fountain\" OR \"musical fountain supply and installation\" OR \"programmable dancing fountain turnkey tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.96,
+      "reason": "Specific municipal tender directly matches musical fountains, fountain jets and underwater lighting. The supplied summary does not establish detailed control requirements or bidder eligibility.",
+      "evidence": "Scope includes a 10-foot sculpture, RCC fountain basin, pump, jets, underwater RGB lights and programmable tree lighting.",
+      "status": "shortlist",
+      "deadline": "2026-11-18",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "6e01204f71f98acded99aff8255b25d24f9022bda2a261a9bf87e5e4521a6246",
+        "ranked_at": "2026-11-12T05:23:39.398360+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "fdcc5cb680d00384691d",
+      "url": "https://tenders.infralens.in/tender/janeshwar-mishra-park-mein-sthapit-03-nos-water-screen-2026-ldaup-1202568-1",
+      "title": "Additional script for Janeshwar Mishra Park floating musical fountains, Lucknow",
+      "snippets": [
+        "Lucknow Development Authority tender 2026_LDAUP_1202568_1, reproduced by BidEasy, for creation and dissemination of one additional script for three existing water-screen integrated floating musical fountains. Submission deadline: 16 November 2026. Estimated value: ₹95.00 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "fountains"
+      ],
+      "queries": [
+        "(\"programmable fountain\" OR \"musical fountain\" OR \"musical fountain supply and installation\" OR \"programmable dancing fountain turnkey tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.95,
+      "reason": "Specific tender for additional show scripting for water-screen integrated floating musical fountains directly overlaps musical fountains and multimedia water shows. Hardware installation or maintenance is not stated.",
+      "evidence": "creation and dissemination of one additional script for three existing water-screen integrated floating musical fountains.",
+      "status": "shortlist",
+      "deadline": "2026-11-16",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "8b74536b8e6be276f6715aa3305258a0c31d87b48d64a6269eac6af080f164a7",
+        "ranked_at": "2026-11-12T05:23:49.011116+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 9500000.0,
+      "tender_value_display": "₹95.00 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹95.00 lakh"
+      ]
+    },
+    {
+      "id": "ba57290644ebd604475e",
+      "url": "https://tenderkart.in/tender/340fe944-1e66-4399-838c-227938d8b714",
+      "title": "Operation and Maintenance of Colour Static Moghal Garden Fountains and Landscape Garden Toilet Blocks",
+      "snippets": [
+        "Specific notice mirror for Krishna Bhagya Jala Nigam Limited, Almatti, Karnataka; tender KBJNL/2026-27/OW/WORK_INDENT3746. Covers one year of operation and maintenance of garden fountains and toilet blocks. Deadline: 19 November 2026, 5:00 pm. Estimated value: ₹56.3 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "maintenance"
+      ],
+      "queries": [
+        "(\"fountain operation and maintenance\" OR \"fountain renovation\" OR \"fountain rehabilitation works tender\" OR \"fountain operation and maintenance contract\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.95,
+      "reason": "Directly matches fountain operation and maintenance. Toilet-block maintenance is bundled into the scope; detailed fountain systems are unspecified. The specific tender notice includes an explicit deadline.",
+      "evidence": "Covers one year of operation and maintenance of garden fountains and toilet blocks.",
+      "status": "shortlist",
+      "deadline": "2026-11-19",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "48479706984b17a7bca2e03fb9d5eb7fa6d23fba7384e45270c1ff08a094931e",
+        "ranked_at": "2026-11-12T05:21:34.450442+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 5630000.0,
+      "tender_value_display": "₹56.30 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹56.3 lakh"
+      ]
+    },
+    {
+      "id": "64b981d2ff9c1467221c",
+      "url": "https://tenders.infralens.in/tender/supply-installation-commissioning-and-annual-repair-and-maintenance-of-2026-tmc-1344057-2",
+      "title": "Supply, Installation, Commissioning and Annual Repair and Maintenance of Aeration Systems for Various Lakes within Thane Municipal Corporation Limits",
+      "snippets": [
+        "Thane Municipal Corporation tender 2026_TMC_1344057_2, reference TMC/PRO/PCC/631/2026-27, for supply, installation, commissioning and annual repair and maintenance of lake aeration systems. The tender-specific secondary source reports a second extension issued 9 November 2026 and a submission deadline of 17 November 2026. Estimated value: ₹8.40 lakh. Original government notice could not be verified."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "aeration"
+      ],
+      "queries": [
+        "(\"floating aerator\" OR \"lake aeration system\" OR \"floating aerator supply and installation\" OR \"lake aeration system procurement\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.95,
+      "reason": "Lake aeration system supply, installation, commissioning and maintenance directly match the aeration capability. This is a specific tender, but the original government notice is unverified and the deadline comes from a secondary source.",
+      "evidence": "for supply, installation, commissioning and annual repair and maintenance of lake aeration systems.",
+      "status": "shortlist",
+      "deadline": "2026-11-17",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "e4aced0286026d39390e88b7bd43062131016bd131b3b8d38ee4f44409fe8d85",
+        "ranked_at": "2026-11-12T05:22:18.096820+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 840000.0,
+      "tender_value_display": "₹8.40 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹8.40 lakh"
+      ]
+    },
+    {
+      "id": "32ed62dd1dc8734597c9",
+      "url": "https://www.tendershark.com/details/jammu-and-kashmir-tender/public-works-department/2fe32ac9-9f77-4f32-a565-318adfa3ca8b",
+      "title": "Restoration and Upgradation of 250 KVA Substation and Fountain at Yemberzal Guest House, TRC Srinagar",
+      "snippets": [
+        "Specific notice mirror for Jammu and Kashmir PWD, Executive Engineer RNB Electric Division Kashmir; tender 2026_PWDJK_329823_1. Covers restoration and upgradation of the guest house substation and fountain. Deadline: 20 November 2026, 4:00 pm. Estimated value: ₹24.99 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "maintenance"
+      ],
+      "queries": [
+        "(\"fountain operation and maintenance\" OR \"fountain renovation\" OR \"fountain rehabilitation works tender\" OR \"fountain operation and maintenance contract\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.9,
+      "reason": "The specific tender directly matches fountain renovation through restoration and upgradation of a fountain. It also includes substation work, and the fountain's detailed scope is unspecified.",
+      "evidence": "Covers restoration and upgradation of the guest house substation and fountain.",
+      "status": "shortlist",
+      "deadline": "2026-11-20",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "bad73d5355470b1b12c47efd3912298853f9caedc0e665100ae3c07578ab4015",
+        "ranked_at": "2026-11-12T05:21:55.303436+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 2499000.0,
+      "tender_value_display": "₹24.99 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹24.99 lakh"
+      ]
+    },
+    {
+      "id": "ae73569471510400db9b",
+      "url": "https://app.atlenza.com/tender/expression-of-interest-for-development-of-sound-and-light-multi-media-276da6f27ebb4637aa4ccb72b366101f",
+      "title": "EOI for sound and light multimedia show at Basara / Kaleshwaram",
+      "snippets": [
+        "Telangana State Tourism Development Corporation EOI for development of a sound and light multimedia show at Basara / Kaleshwaram for Godavari Pushkaralu. Tender ID: 745623. Deadline: 16 November 2026, 3:00 pm IST. Project value not stated. Source is a specific secondary notice."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "shows"
+      ],
+      "queries": [
+        "(\"interactive multimedia installation\" OR \"laser show\" OR \"laser show system supply tender\" OR \"synchronized light and sound show installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.9,
+      "reason": "The sound and light multimedia show directly overlaps with show and multimedia capabilities. This is a specific EOI with a tender ID, though the secondary notice does not specify synchronization, projection technology, or fountain components.",
+      "evidence": "EOI for development of a sound and light multimedia show at Basara / Kaleshwaram for Godavari Pushkaralu. Tender ID: 745623. Deadline: 16 November 2026, 3:00 pm IST.",
+      "status": "shortlist",
+      "deadline": "2026-11-16",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "1abac31c24a3d5cb24e073cc73692b61c502fdb277b2f65fc97eec05ea7682e9",
+        "ranked_at": "2026-11-12T05:20:59.456017+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "bdd44e639bc675c5d932",
+      "url": "https://govttenderhub.com/tender/525309-fixing-fountain-at-nanora-talab",
+      "title": "Fixing Fountain at Nanora Talab, Khajuraho",
+      "snippets": [
+        "Tender-specific mirror for Nagar Parishad Khajuraho, Madhya Pradesh; fountain work at Nanora Talab. Tender ID: 2026_UAD_545661_1. Submission deadline: 30 November 2026, 5:30 pm IST. Estimated value: ₹19.85 lakh.",
+        "Third-party notice for Nagar Parishad Khajuraho, Madhya Pradesh, tender 2026_UAD_545661_1, for fixing a fountain at Nanora Talab. Work period: 30 days. Bid deadline: 30 November 2026 at 5:30 PM IST. Estimated value: ₹19.85 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "bundled",
+        "water_features"
+      ],
+      "queries": [
+        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\" OR \"tourism infrastructure fountain turnkey tender\" OR \"lake beautification fountain installation tender\") (tender OR bid OR RFP OR NIT) India",
+        "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.88,
+      "reason": "Fixing a fountain directly overlaps fountain installation or rehabilitation capabilities. The specific tender ID identifies a procurement notice, though the fountain type and technical scope are unspecified.",
+      "evidence": "for fixing a fountain at Nanora Talab.",
+      "status": "shortlist",
+      "deadline": "2026-11-30",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "beb2e18898b25f6a401d06e9fd58e5cd382f726f91eaaf9dea4733a1a1b27a1e",
+        "ranked_at": "2026-11-12T05:22:49.994422+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 1985000.0,
+      "tender_value_display": "₹19.85 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹19.85 lakh"
+      ]
+    },
+    {
+      "id": "bd60b43c7d979da822eb",
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58391306/e197fb8b0faf236dc91ed97b7484b746",
+      "title": "Water Fountain Work at Sahid Park, Kalimpong",
+      "snippets": [
+        "Third-party notice for Gorkhaland Territorial Administration, reference 5/NIeT/EE/KEED/GTA/2026-27, for water fountain work under the lighting system and compound illumination at Sahid Park, 11th Mile, Kalimpong, West Bengal. Bid deadline: 18 November 2026. Estimated value: ₹39.13 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "water_features"
+      ],
+      "queries": [
+        "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.86,
+      "reason": "Explicit water fountain work directly overlaps fountain and park water-feature capabilities. The lighting context supports overlap, but the notice does not specify fountain type, controls, or detailed scope.",
+      "evidence": "for water fountain work under the lighting system and compound illumination at Sahid Park",
+      "status": "shortlist",
+      "deadline": "2026-11-18",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "d333f2fa989e8df0d791c2dee5190b58009aa6f10225992e5c9b2651d3ea01c9",
+        "ranked_at": "2026-11-12T05:24:31.306525+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 3913000.0,
+      "tender_value_display": "₹39.13 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹39.13 lakh"
+      ]
+    },
+    {
+      "id": "b3863a19acab63c63543",
+      "url": "https://www.tenderdetail.com/Indian-Tenders/TenderNotice/58349893/facbb04ea00f08aebe0b4b80bfd19c10",
+      "title": "Work of Panch Gaurav Fountain in Municipal Council Park",
+      "snippets": [
+        "Third-party notice for Rajasthan Directorate of Local Bodies, reference DLB2627WSOB23905, covering Panch Gaurav fountain work in a municipal council park. Bid deadline: 13 November 2026. Estimated value: ₹35 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "water_features"
+      ],
+      "queries": [
+        "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.86,
+      "reason": "Specific procurement for fountain work in a municipal park directly overlaps fountain and park water-feature capabilities. The notice does not specify fountain type, technical scope, or eligibility requirements.",
+      "evidence": "covering Panch Gaurav fountain work in a municipal council park. Bid deadline: 13 November 2026.",
+      "status": "shortlist",
+      "deadline": "2026-11-13",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "f69e2dce7712d83f644ba46c914955eab35e6942a06a4697bb13d7259cd7d91a",
+        "ranked_at": "2026-11-12T05:24:03.279424+00:00"
+      },
+      "change": "changed",
+      "tender_value_inr": 3500000.0,
+      "tender_value_display": "₹35.00 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹35 lakh"
+      ]
+    },
+    {
+      "id": "0bb00a1db344c63a7ac8",
+      "url": "https://govttenderhub.com/tender/589311-annual-maintanence-of-racecourse-footpath-area-greenery-islands",
+      "title": "Annual Maintenance of Racecourse Area Including Artificial Fountain, Coimbatore",
+      "snippets": [
+        "Specific notice mirror for Coimbatore City Municipal Corporation; tender 2026_MAWS_721291_4, reference E84/2026-Two cover. Covers 12 months of maintenance of Racecourse footpaths, greenery, islands, artificial fountain, media tower and public toilets in Ward 66, Central Zone. Deadline: 19 November 2026, 3:00 pm IST. Estimated value: ₹49.50 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "maintenance"
+      ],
+      "queries": [
+        "(\"fountain operation and maintenance\" OR \"fountain renovation\" OR \"fountain rehabilitation works tender\" OR \"fountain operation and maintenance contract\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.84,
+      "reason": "The specific tender explicitly includes artificial fountain maintenance, directly matching fountain operation and maintenance. It bundles several other assets, and the fountain’s technical scope and share of work are unspecified.",
+      "evidence": "Covers 12 months of maintenance of Racecourse footpaths, greenery, islands, artificial fountain, media tower and public toilets in Ward 66, Central Zone.",
+      "status": "shortlist",
+      "deadline": "2026-11-19",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "4aa33ef2c9cfafb2c8aed958aee3a07739bf23a3a6f9e508969385694259c7b1",
+        "ranked_at": "2026-11-12T05:22:07.096936+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 4950000.0,
+      "tender_value_display": "₹49.50 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹49.50 lakh"
+      ]
+    },
+    {
+      "id": "6bedfcc379575c2fb339",
+      "url": "https://govttenderhub.com/tender/544632-fountain-and-railing-work-in-ward-no-18-near-arjun-singh-statue",
+      "title": "Fountain and Railing Work in Ward No. 18 Near Arjun Singh Statue",
+      "snippets": [
+        "Third-party notice for Municipal Corporation Singrauli, Madhya Pradesh, tender 2026_UAD_546731_1, covering fountain and railing work near Arjun Singh statue. Work period: 60 days. Bid deadline: 30 November 2026 at 5:00 PM. Estimated value: ₹10,14,516 INR."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "water_features"
+      ],
+      "queries": [
+        "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.84,
+      "reason": "Explicit fountain work directly overlaps fountain and water-feature capabilities, though the fountain type and technical scope are unspecified and railing work is bundled. The specific tender identifier and bid deadline establish a procurement notice.",
+      "evidence": "covering fountain and railing work near Arjun Singh statue.",
+      "status": "shortlist",
+      "deadline": "2026-11-30",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "b67bdd6990eefdfdef0db8e038295d06e865930fcb106ed26550d4e9797f69a8",
+        "ranked_at": "2026-11-12T05:24:20.747827+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 1014516.0,
+      "tender_value_display": "₹10.15 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹10,14,516"
+      ]
+    },
+    {
+      "id": "976391b559429db99a90",
+      "url": "https://app.atlenza.com/tender/light-and-sound-show-at-chanderngore-d71cbc3b76cf452bb63dc09892cde946",
+      "title": "Turnkey light and sound show at The Strand, Chandannagar",
+      "snippets": [
+        "West Bengal Tourism Department tender 2026_WBTD_1048349_1, reference 18 DoT of 2026 (2nd Call), for conceptualization, design, supply, installation, testing, commissioning, operation and maintenance of a turnkey show at The Strand, Chandannagar. Deadline: 20 November 2026, 6:00 pm IST. Project value not stated. Source is a specific secondary notice."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "shows"
+      ],
+      "queries": [
+        "(\"interactive multimedia installation\" OR \"laser show\" OR \"laser show system supply tender\" OR \"synchronized light and sound show installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.84,
+      "reason": "The turnkey light and sound show directly overlaps with show capabilities, including design, installation and maintenance. Synchronization and specific multimedia technologies are not stated. A specific tender is identified in a secondary notice.",
+      "evidence": "Turnkey light and sound show at The Strand, Chandannagar",
+      "status": "shortlist",
+      "deadline": "2026-11-20",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "4d3f9ce88770bea3042d4456ca98b9622253b9653593cea5db2844f92ca9ba1a",
+        "ranked_at": "2026-11-12T05:20:48.102840+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": null,
+      "tender_value_display": "Not stated",
+      "tender_value_status": "not stated",
+      "tender_value_evidence": []
+    },
+    {
+      "id": "b5dfc305af1527ee44ea",
+      "url": "https://tenderhut.in/tender/gem/gem-2026-b-8207567",
+      "title": "Design and Development of Water Conservation and Pond Beautification, Nashik",
+      "snippets": [
+        "Tender-specific mirror of Ministry of Defence GeM bid GEM/2026/B/8207567, Nashik, Maharashtra. Scope includes pond formation and lining, fountain, electrical works, pathways, bridge improvements, viewing deck, lighting and landscaping. Submission deadline: 19 November 2026, 6:00 pm. Estimated value: ₹5 lakh (less than this amount, as reported by the source)."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "bundled"
+      ],
+      "queries": [
+        "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\" OR \"tourism infrastructure fountain turnkey tender\" OR \"lake beautification fountain installation tender\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.76,
+      "reason": "The pond beautification procurement explicitly includes a fountain, substantially matching bundled water-feature capabilities. Fountain type, controls and maintenance requirements are unspecified, limiting certainty of a direct specialist match.",
+      "evidence": "Scope includes pond formation and lining, fountain, electrical works, pathways, bridge improvements, viewing deck, lighting and landscaping.",
+      "status": "shortlist",
+      "deadline": "2026-11-19",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "a1abac17517e1328739675125b41b91ec58c06fb3767aef34c77bc1018753a04",
+        "ranked_at": "2026-11-12T05:23:23.287812+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 500000.0,
+      "tender_value_display": "₹5.00 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹5 lakh"
+      ]
+    },
+    {
+      "id": "3618f8d01f2739055d9b",
+      "url": "https://app.atlenza.com/tender/special-repairs-to-the-gandhi-fountain-water-proofing-and-flooring-b50422408bdb41209708e1ef79c53207",
+      "title": "Special Repairs to Gandhi Fountain Waterproofing and Flooring at Mettur Dam Upper Park",
+      "snippets": [
+        "Specific notice mirror for Tamil Nadu Water Resources Department; tender 2026_WRD_720188_1. Covers fountain waterproofing and flooring repairs at Mettur Dam Upper Park, with a 90-day work period. Deadline: 17 November 2026, 3:00 pm IST. Estimated value: ₹4.45315 lakh."
+      ],
+      "providers": [
+        "codex"
+      ],
+      "groups": [
+        "maintenance"
+      ],
+      "queries": [
+        "(\"fountain operation and maintenance\" OR \"fountain renovation\" OR \"fountain rehabilitation works tender\" OR \"fountain operation and maintenance contract\") (tender OR bid OR RFP OR NIT) India"
+      ],
+      "evidence_kind": [
+        "Codex web-search summary"
+      ],
+      "score": 0.74,
+      "reason": "Substantial overlap with fountain rehabilitation: waterproofing repairs target the fountain itself. Scope is limited to waterproofing and flooring, with no stated work on jets, controls, lighting, or show systems.",
+      "evidence": "Covers fountain waterproofing and flooring repairs at Mettur Dam Upper Park, with a 90-day work period.",
+      "status": "shortlist",
+      "deadline": "2026-11-17",
+      "deadline_status": "model-extracted; verify at source",
+      "possibly_expired": false,
+      "eligibility": "not assessed",
+      "source_verified": false,
+      "ranking_cache": {
+        "hit": false,
+        "key": "49b557920c3a2b6d6872840bfaaf51bf41487379cd02ba986d5f62d933e93159",
+        "ranked_at": "2026-11-12T05:21:48.071374+00:00"
+      },
+      "change": "new",
+      "tender_value_inr": 445315.0,
+      "tender_value_display": "₹4.45 lakh",
+      "tender_value_status": "stated in search text; unverified",
+      "tender_value_evidence": [
+        "Estimated value: ₹4.45315 lakh"
+      ]
+    }
+  ],
+  "ranking_cache": {
+    "hits": 0,
+    "misses": 24,
+    "writes": 24,
+    "signature": "619e49c8fd02b1fbbb1033b3ef2de3c008f806036c7969f5035477e83ece6d41"
+  },
+  "settings": {
+    "provider": "codex",
+    "ranker": "codex",
+    "ranker_model": "codex-default",
+    "query_budget": 8
+  },
+  "timing": {
+    "planning_seconds": 14.27,
+    "search_seconds": 587.14,
+    "ranking_seconds": 253.36,
+    "processing_seconds": 854.89
+  },
+  "openai_usage": [],
+  "codex_search_calls": [
+    {
+      "query": "(\"interactive multimedia installation\" OR \"laser show\" OR \"laser show system supply tender\" OR \"synchronized light and sound show installation tender\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 144.12,
+      "web_search_events": 7,
+      "usage": [
+        {
+          "input_tokens": 338007,
+          "cached_input_tokens": 270592,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1517,
+          "reasoning_output_tokens": 60
+        }
+      ]
+    },
+    {
+      "query": "(\"fountain operation and maintenance\" OR \"fountain renovation\" OR \"fountain rehabilitation works tender\" OR \"fountain operation and maintenance contract\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 61.6,
+      "web_search_events": 4,
+      "usage": [
+        {
+          "input_tokens": 155857,
+          "cached_input_tokens": 108032,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1059,
+          "reasoning_output_tokens": 52
+        }
+      ]
+    },
+    {
+      "query": "(\"floating aerator\" OR \"lake aeration system\" OR \"floating aerator supply and installation\" OR \"lake aeration system procurement\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 37.99,
+      "web_search_events": 3,
+      "usage": [
+        {
+          "input_tokens": 108677,
+          "cached_input_tokens": 68864,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 472,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "query": "(\"PLC fountain control\" OR \"fountain control panel\" OR \"PLC fountain control panel supply tender\" OR \"fountain underwater lighting supply and installation\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 59.74,
+      "web_search_events": 6,
+      "usage": [
+        {
+          "input_tokens": 224439,
+          "cached_input_tokens": 168576,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 829,
+          "reasoning_output_tokens": 39
+        }
+      ]
+    },
+    {
+      "query": "(\"lake beautification fountain\" OR \"tourism infrastructure fountain\" OR \"tourism infrastructure fountain turnkey tender\" OR \"lake beautification fountain installation tender\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 77.1,
+      "web_search_events": 6,
+      "usage": [
+        {
+          "input_tokens": 253267,
+          "cached_input_tokens": 181888,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1391,
+          "reasoning_output_tokens": 167
+        }
+      ]
+    },
+    {
+      "query": "(\"programmable fountain\" OR \"musical fountain\" OR \"musical fountain supply and installation\" OR \"programmable dancing fountain turnkey tender\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 98.49,
+      "web_search_events": 5,
+      "usage": [
+        {
+          "input_tokens": 201719,
+          "cached_input_tokens": 148480,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1197,
+          "reasoning_output_tokens": 38
+        }
+      ]
+    },
+    {
+      "query": "(\"architectural fountain\" OR \"decorative fountain\" OR \"architectural fountain design and construction\" OR \"decorative landscape water feature installation tender\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 56.95,
+      "web_search_events": 4,
+      "usage": [
+        {
+          "input_tokens": 155473,
+          "cached_input_tokens": 121984,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1117,
+          "reasoning_output_tokens": 23
+        }
+      ]
+    },
+    {
+      "query": "(\"multimedia water show\" OR \"water screen projection\" OR \"water screen projection system supply tender\" OR \"multimedia water show turnkey procurement\") (tender OR bid OR RFP OR NIT) India",
+      "duration_seconds": 51.14,
+      "web_search_events": 4,
+      "usage": [
+        {
+          "input_tokens": 151233,
+          "cached_input_tokens": 108416,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 693,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    }
+  ],
+  "codex_rank_calls": [
+    {
+      "task": "planning",
+      "model": "codex-default",
+      "duration_seconds": 14.27,
+      "usage": [
+        {
+          "input_tokens": 12720,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 156,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 8.27,
+      "usage": [
+        {
+          "input_tokens": 11982,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 90,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 11.35,
+      "usage": [
+        {
+          "input_tokens": 12814,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 129,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 7.9,
+      "usage": [
+        {
+          "input_tokens": 12817,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 101,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 9.46,
+      "usage": [
+        {
+          "input_tokens": 12846,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 115,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 17.61,
+      "usage": [
+        {
+          "input_tokens": 12818,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 84,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 13.61,
+      "usage": [
+        {
+          "input_tokens": 11967,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 134,
+          "reasoning_output_tokens": 32
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 7.23,
+      "usage": [
+        {
+          "input_tokens": 12822,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 84,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 11.79,
+      "usage": [
+        {
+          "input_tokens": 11983,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 105,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 10.99,
+      "usage": [
+        {
+          "input_tokens": 12848,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 95,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 9.06,
+      "usage": [
+        {
+          "input_tokens": 12806,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 112,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 8.9,
+      "usage": [
+        {
+          "input_tokens": 12820,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 101,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 13.92,
+      "usage": [
+        {
+          "input_tokens": 12877,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 78,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 8.12,
+      "usage": [
+        {
+          "input_tokens": 12879,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 95,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 11.18,
+      "usage": [
+        {
+          "input_tokens": 11983,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 85,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 13.97,
+      "usage": [
+        {
+          "input_tokens": 11978,
+          "cached_input_tokens": 9216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 96,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 7.15,
+      "usage": [
+        {
+          "input_tokens": 12807,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 87,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 8.95,
+      "usage": [
+        {
+          "input_tokens": 12811,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 88,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 9.6,
+      "usage": [
+        {
+          "input_tokens": 12803,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 84,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 7.88,
+      "usage": [
+        {
+          "input_tokens": 12813,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 103,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 6.38,
+      "usage": [
+        {
+          "input_tokens": 12785,
+          "cached_input_tokens": 9216,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 94,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 17.46,
+      "usage": [
+        {
+          "input_tokens": 12816,
+          "cached_input_tokens": 11392,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 87,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 10.55,
+      "usage": [
+        {
+          "input_tokens": 12817,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 87,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 14.51,
+      "usage": [
+        {
+          "input_tokens": 12834,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 104,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "task": "ranking",
+      "model": "codex-default",
+      "duration_seconds": 7.3,
+      "usage": [
+        {
+          "input_tokens": 12826,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 88,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    }
+  ],
+  "ranking_order": [
+    "match score descending",
+    "stated INR value descending",
+    "title"
+  ]
+}

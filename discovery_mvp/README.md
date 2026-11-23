@@ -53,6 +53,10 @@ The dashboard supports:
 - A discovery dialog with provider, ranker and query-budget controls.
 - Background execution and a live activity log, with overlapping runs blocked.
 - Opportunity search, status/provider filters, relevance sorting, and JSON export.
+- A calendar picker for tenders discovered on a selected IST date, across all runs
+  that day, including rediscoveries. Opportunities remain deduplicated. Select
+  All dates to restore the full library. Date filtering uses saved run observations,
+  not publication dates or deadlines; exports and counts reflect the selected date.
 - Evidence, original-source links, search provenance, and relevant/irrelevant feedback.
 - Capability groups, generated queries, saved run history, and key-configuration status.
 - Daily scheduling instructions; the browser does not install schedules.
@@ -107,6 +111,16 @@ Not seen does not mean closed, cancelled or withdrawn. The latest observed
 assessment represents the opportunity. An earlier stated project value can be
 retained when newer text omits it; the detail view labels it as previously stated.
 Feedback follows merged opportunities across their source records.
+
+Differently worded listings missing an ID can attach to a single identified
+opportunity when their specific title details, deadline and stated value agree
+(with up to 0.1% rounding). Routine design/supply/installation wording and word
+order may differ; place, year, scope and ward/package markers remain significant.
+Conflicting IDs, package details or values block title matching. Ambiguous
+matches stay separate. This intentionally leaves uncertain paraphrases for review.
+Existing exact-title matching remains available. All source records and review
+history are retained, and a library-version change automatically rebuilds the
+stored library from existing runs without new searches or model calls.
 
 The library is refreshed in SQLite from stored run observations after each
 discovery run. Existing history is backfilled without search or model calls.

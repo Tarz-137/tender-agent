@@ -10,6 +10,16 @@ from urllib.parse import urlsplit
 from discovery_mvp.engine import canonical_url
 from discovery_mvp.values import prepare_report, with_tender_value
 
+LIBRARY_VERSION = 2
+
+# Ignore procurement phrasing, but retain scope, place, year and package details.
+TITLE_BOILERPLATE = set('a an the and or of for at in on with including to by design designing supply supplying installation installing commissioning'.split())
+SCOPE_WORDS = set('musical fountain multimedia water screen show integrated audio visual projection mapping laser lighting system construction work development'.split())
+TOKEN_ALIASES = {'fountains': 'fountain', 'screens': 'screen', 'shows': 'show', 'systems': 'system'}
+DETAIL_MARKER = re.compile(
+    r'\b(ward|package|lot|phase|zone|sector|block|part)\b\s*(?:no\.?|number|:|-)?\s*'
+    r'([a-z]?\d+[a-z]?|[ivx]+|[a-z])\b', re.I)
+
 TENDER_ID = re.compile(r"\b20\d{2}[_-][a-z][a-z0-9]*[_-][a-z0-9]+[_-]\d+\b", re.I)
 GEM_ID = re.compile(r"\bGEM/20\d{2}/[A-Z]/\d+\b", re.I)
 DEPARTMENT_REF = re.compile(r"\b\d+/(?:EE|GM|SM|SE|CE)\b[\w ()/.-]{3,90}?/20\d{2}[-/]\d{2,4}\b", re.I)
@@ -28,6 +38,44 @@ def normalized_title(title):
     return ' '.join(re.findall(r'\w+', unicodedata.normalize('NFKC', title).casefold()))
 
 
+def title_details(item):
+    return {TOKEN_ALIASES.get(token, token) for token in normalized_title(item['title']).split()
+            if token not in TITLE_BOILERPLATE}
+
+
+def detail_markers(item):
+    text = ' '.join([item['title'], *item.get('snippets', [])]).lower()
+    return set(DETAIL_MARKER.findall(text))
+
+
+def compatible_values(left, right, required=False):
+    valued = [with_tender_value(item) for item in (left, right)]
+    if any(item['tender_value_status'] == 'conflicting' for item in valued):
+        return False
+    lv, rv = (item['tender_value_inr'] for item in valued)
+    if lv is None or rv is None:
+        return not required
+    # Allow only rounding such as 3.7314 crore versus 3.73 crore.
+    return abs(lv - rv) / max(lv, rv) <= .001
+
+
+def missing_id_match(left, right):
+    """Corroborated title match, never an unrestricted fuzzy similarity merge."""
+    if not left.get('deadline') or left['deadline'] != right.get('deadline'):
+        return False
+    if not compatible_values(left, right):
+        return False
+    if (normalized_title(left['title']) == normalized_title(right['title'])
+            and len(normalized_title(left['title']).split()) >= 8):
+        lm, rm = detail_markers(left), detail_markers(right)
+        return not lm or not rm or lm == rm
+    core = title_details(left)
+    return (detail_markers(left) == detail_markers(right)
+            and core == title_details(right) and len(core) >= 6
+            and len({token for token in core - SCOPE_WORDS if not token.isdigit()}) >= 2
+            and compatible_values(left, right, required=True))
+
+
 def build_library(reports):
     reports = sorted({report['created_at']: report for report in reports if report}.values(),
                      key=lambda report: report['created_at'])
@@ -37,6 +85,7 @@ def build_library(reports):
     observations = [(report['created_at'], item) for report in reports for item in report['candidates']]
     parents = list(range(len(observations)))
     group_ids = [identifiers(item) for _, item in observations]
+    group_markers = [detail_markers(item) for _, item in observations]
 
     def find(index):
         while parents[index] != index:
@@ -44,9 +93,11 @@ def build_library(reports):
             index = parents[index]
         return index
 
-    def join(left, right):
+    def join(left, right, title_match=False):
         left, right = find(left), find(right)
         if left == right:
+            return
+        if title_match and group_markers[left] and group_markers[right] and group_markers[left] != group_markers[right]:
             return
         left_ids = {value for value in group_ids[left] if not value.startswith('REF:')}
         right_ids = {value for value in group_ids[right] if not value.startswith('REF:')}
@@ -56,8 +107,9 @@ def build_library(reports):
             return  # Same title/URL can be reused for a separate tender.
         parents[right] = left
         group_ids[left] |= group_ids[right]
+        group_markers[left] |= group_markers[right]
 
-    id_index, url_index, title_index = {}, {}, {}
+    id_index, url_index = {}, {}
     for index, (_, item) in enumerate(observations):
         for ident in group_ids[index].copy():
             if ident in id_index:
@@ -67,11 +119,49 @@ def build_library(reports):
         if url in url_index:
             join(index, url_index[url])
         url_index[url] = index
-        title_key = (normalized_title(item['title']), item.get('deadline'))
-        if title_key[1] and len(title_key[0].split()) >= 8:
-            if title_key in title_index:
-                join(index, title_index[title_key])
-            title_index[title_key] = index
+
+    # Retain the existing exact-title fallback for unidentified mirrors. Known
+    # tenders are resolved below, after all possible targets are collected.
+    exact_index = {}
+    for index, (_, item) in enumerate(observations):
+        if group_ids[find(index)] or not item.get('deadline'):
+            continue
+        title = normalized_title(item['title'])
+        if len(title.split()) < 8:
+            continue
+        key = (title, item['deadline'])
+        for other in exact_index.get(key, []):
+            if missing_id_match(item, observations[other][1]):
+                join(index, other, title_match=True)
+        exact_index.setdefault(key, []).append(index)
+
+    # Attach an unidentified group only to one unambiguous identified group.
+    # Compute all proposals before joining: a missing-ID listing cannot become
+    # a transitive bridge between different official tenders.
+    strong_groups = {}
+    for index in range(len(observations)):
+        strong_groups.setdefault(find(index), []).append(index)
+    identified = [root for root in strong_groups if group_ids[root]]
+    proposals = []
+    for root, members in strong_groups.items():
+        if group_ids[root]:
+            continue
+        targets = set()
+        for target in identified:
+            for left in members:
+                item = observations[left][1]
+                # Multi-notice summaries are not identity evidence.
+                text = ' '.join([item['title'], item['url'], *item.get('snippets', [])])
+                if len(set(TENDER_ID.findall(text))) > 1 or len(set(GEM_ID.findall(text))) > 1:
+                    continue
+                for right in strong_groups[target]:
+                    other = observations[right][1]
+                    if missing_id_match(item, other):
+                        targets.add(target)
+        if len(targets) == 1:
+            proposals.append((root, targets.pop()))
+    for root, target in proposals:
+        join(target, root, title_match=True)
 
     groups = {}
     for index, observation in enumerate(observations):
@@ -117,7 +207,7 @@ def build_library(reports):
     summary = {status: sum(item['discovery_status'] == status for item in candidates)
                for status in ('new', 'rediscovered', 'not_seen')}
     return prepare_report({**latest, 'scope': 'library', 'candidates': candidates,
-                           'library_version': 1,
+                           'library_version': LIBRARY_VERSION,
                            'library_summary': {**summary, 'total': len(candidates), 'run_count': len(reports),
                                                'latest_run_listings': len(latest['candidates'])}})
 

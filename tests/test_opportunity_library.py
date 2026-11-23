@@ -1,3 +1,5 @@
+import copy
+import itertools
 import json
 from pathlib import Path
 import tempfile
@@ -63,6 +65,89 @@ class OpportunityLibraryTests(unittest.TestCase):
         library = build_library([self.report('2026-11-01', [a]), self.report('2026-11-02', [b])])
         self.assertEqual(len(library['candidates']), 1)
         self.assertEqual(len(library['candidates'][0]['sources']), 2)
+
+    def kumbh_pair(self):
+        known = self.item('2026_HRDA_101761_1', 'known',
+            title='Design, supply, installation and commissioning of musical fountain with multimedia water-screen show at Kumbh Mela 2027, Haridwar',
+            text='Estimated value INR 3.7314 crore')
+        mirror = self.item('', 'mirror',
+            title='Musical fountain and multimedia water-screen show for Kumbh Mela 2027, Haridwar',
+            text='Estimated value INR 3.73 crore')
+        return known, mirror
+
+    def test_paraphrased_missing_id_merges_with_corroboration_in_either_order(self):
+        for items in itertools.permutations(self.kumbh_pair()):
+            library = build_library([self.report('2026-11-01', list(items))])
+            self.assertEqual(len(library['candidates']), 1)
+            merged = library['candidates'][0]
+            self.assertEqual(merged['tender_ids'], ['2026_HRDA_101761_1'])
+            self.assertEqual(set(merged['record_ids']), {'known', 'mirror'})
+            self.assertEqual(len(merged['sources']), 2)
+
+    def test_similar_listings_stay_separate_without_all_required_evidence(self):
+        cases = {
+            'different place': {'title': 'Musical fountain and multimedia water-screen show for Kumbh Mela 2027, Prayagraj'},
+            'different scope': {'title': 'Repair of musical fountain and multimedia water-screen show for Kumbh Mela 2027, Haridwar'},
+            'different year': {'title': 'Musical fountain and multimedia water-screen show for Kumbh Mela 2028, Haridwar'},
+            'different deadline': {'deadline': '2026-12-01'},
+            'missing deadline': {'deadline': None},
+            'different value': {'snippets': ['Estimated value INR 4 crore']},
+            'missing value': {'snippets': []},
+            'conflicting values': {'snippets': ['Estimated value INR 3.73 crore; estimated value INR 4 crore']},
+            'different official ID': {'snippets': ['2026_HRDA_101762_1; Estimated value INR 3.73 crore']},
+            'multiple official IDs': {'snippets': ['2026_HRDA_101761_1 and 2026_HRDA_101762_1; Estimated value INR 3.73 crore']},
+            'package only in snippet': {'snippets': ['Package 2; Estimated value INR 3.73 crore']},
+        }
+        for label, changes in cases.items():
+            with self.subTest(label=label):
+                known, mirror = self.kumbh_pair()
+                mirror.update(changes)
+                self.assertEqual(len(build_library([self.report('2026-11-01', [known, mirror])])['candidates']), 2)
+
+    def test_conflicting_ward_and_package_details_block_even_exact_titles(self):
+        for kind in ('Ward', 'Package', 'Lot', 'Phase'):
+            with self.subTest(kind=kind):
+                known, mirror = self.kumbh_pair()
+                mirror['title'] = known['title']
+                known['snippets'][0] += f'; {kind} 1'
+                mirror['snippets'][0] += f'; {kind} 2'
+                self.assertEqual(len(build_library([self.report('2026-11-01', [known, mirror])])['candidates']), 2)
+
+    def test_ambiguous_missing_id_cannot_bridge_two_official_tenders(self):
+        known, mirror = self.kumbh_pair()
+        other = copy.deepcopy(known)
+        other.update(id='other', url='https://example.com/other')
+        other['snippets'] = ['2026_HRDA_101762_1; Estimated value INR 3.73 crore']
+        for items in itertools.permutations((known, other, mirror)):
+            self.assertEqual(len(build_library([self.report('2026-11-01', list(items))])['candidates']), 3)
+
+    def test_marker_detection_does_not_treat_third_party_as_part_y(self):
+        from discovery_mvp.library import detail_markers
+        item = self.item('', 'mirror', text='Third-party notice; Phase I; Package 2')
+        self.assertEqual(detail_markers(item), {('phase', 'i'), ('package', '2')})
+
+    def test_missing_package_cannot_bridge_different_packages_in_exact_title_groups(self):
+        known, mirror = self.kumbh_pair()
+        known['snippets'] = ['Estimated value INR 3.7314 crore; Package 1']
+        mirror['title'] = known['title']
+        other = copy.deepcopy(known)
+        other.update(id='other', url='https://example.com/other')
+        other['snippets'] = ['Estimated value INR 3.73 crore; Package 2']
+        for items in itertools.permutations((known, mirror, other)):
+            result = build_library([self.report('2026-11-01', list(items))])
+            self.assertEqual(len(result['candidates']), 2)
+            self.assertFalse(any({'known', 'other'} <= set(item['record_ids']) for item in result['candidates']))
+
+    def test_existing_exact_title_unidentified_mirrors_still_merge(self):
+        known, mirror = self.kumbh_pair()
+        known['snippets'] = ['Estimated value INR 3.7314 crore']
+        mirror['title'] = known['title']
+        self.assertEqual(len(build_library([self.report('2026-11-01', [known, mirror])])['candidates']), 1)
+
+    def test_two_unidentified_paraphrases_are_not_merged_by_similarity(self):
+        known, mirror = self.kumbh_pair()
+        known['snippets'] = ['Estimated value INR 3.7314 crore']
+        self.assertEqual(len(build_library([self.report('2026-11-01', [known, mirror])])['candidates']), 2)
 
     def test_persistence_rebuilds_from_history_and_does_not_duplicate_latest(self):
         with tempfile.TemporaryDirectory() as directory:

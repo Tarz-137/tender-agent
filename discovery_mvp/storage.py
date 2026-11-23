@@ -1,7 +1,7 @@
 """SQLite source of truth; JSON run files are optional exports and migration input."""
 
 from contextlib import contextmanager
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 import hashlib
 import json
 import os
@@ -68,6 +68,16 @@ class Store:
                     payload_json TEXT NOT NULL);
             ''')
         self._migrate_legacy()
+        self._refresh_library_version()
+
+    def _refresh_library_version(self):
+        from discovery_mvp.library import LIBRARY_VERSION
+        with self.connection() as connection:
+            current = self._meta(connection, 'library_version')
+        if current != LIBRARY_VERSION:
+            with self.connection(write=True) as connection:
+                if self._meta(connection, 'library_version') != LIBRARY_VERSION:
+                    self._rebuild_library(connection)
 
     @contextmanager
     def connection(self, write=False):
@@ -122,9 +132,10 @@ class Store:
             (ident, review['label'], review.get('updated_at', ''), encode(review)))
 
     def _rebuild_library(self, connection):
-        from discovery_mvp.library import build_library
+        from discovery_mvp.library import LIBRARY_VERSION, build_library
         reports = [json.loads(row['report_json']) for row in connection.execute('SELECT report_json FROM runs ORDER BY created_at')]
         library = build_library(reports)
+        self._set_meta(connection, 'library_version', LIBRARY_VERSION)
         connection.execute('DELETE FROM opportunities')
         self._set_meta(connection, 'library_report', {key: value for key, value in library.items() if key != 'candidates'} if library else None)
         if library:
@@ -208,14 +219,45 @@ class Store:
                      'shortlisted': sum(item['status'] == 'shortlist' for item in report['candidates'])}
                     for row in connection.execute('SELECT * FROM runs ORDER BY created_at DESC LIMIT ?', (limit,))]
 
-    def library(self):
+    def library(self, discovery_date=None):
+        parameters = ()
+        condition = ''
+        if discovery_date is not None:
+            if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', discovery_date):
+                raise ValueError('Discovery date must be YYYY-MM-DD')
+            day = date.fromisoformat(discovery_date)
+            # Runs record discovery time. Include every observation that day,
+            # including rediscoveries, using IST regardless of the host timezone.
+            start = datetime.combine(day, datetime.min.time(), timezone(timedelta(hours=5, minutes=30)))
+            parameters = (start.isoformat(), start.isoformat())
+            condition = """ WHERE EXISTS (
+                SELECT 1 FROM opportunity_records records
+                JOIN observations observation ON observation.record_id=records.record_id
+                JOIN runs run ON run.id=observation.run_id
+                WHERE records.opportunity_id=opportunities.id
+                  AND julianday(CASE WHEN length(run.created_at)=10
+                      THEN run.created_at || 'T00:00:00+05:30'
+                      WHEN length(run.created_at)<=19 THEN run.created_at || '+05:30' ELSE run.created_at END)
+                      >= julianday(?)
+                  AND julianday(CASE WHEN length(run.created_at)=10
+                      THEN run.created_at || 'T00:00:00+05:30'
+                      WHEN length(run.created_at)<=19 THEN run.created_at || '+05:30' ELSE run.created_at END)
+                      < julianday(?) + 1)"""
         with self.connection() as connection:
             metadata = self._meta(connection, 'library_report')
             if metadata is None:
                 return None
-            return {**metadata, 'issues': [*metadata.get('issues', []), *self._meta(connection, 'migration_issues', [])],
-                    'candidates': [json.loads(row['payload_json']) for row in connection.execute(
-                        'SELECT payload_json FROM opportunities ORDER BY score DESC, value_inr DESC, title COLLATE NOCASE')]}
+            candidates = [json.loads(row['payload_json']) for row in connection.execute(
+                'SELECT payload_json FROM opportunities' + condition +
+                ' ORDER BY score DESC, value_inr DESC, title COLLATE NOCASE', parameters)]
+            result = {**metadata, 'issues': [*metadata.get('issues', []), *self._meta(connection, 'migration_issues', [])],
+                      'candidates': candidates}
+            if discovery_date is not None:
+                result['discovery_date'] = discovery_date
+                result['library_summary'] = {**metadata.get('library_summary', {}),
+                    'total': len(candidates), **{status: sum(item['discovery_status'] == status for item in candidates)
+                    for status in ('new', 'rediscovered', 'not_seen')}}
+            return result
 
     def migration_issues(self):
         with self.connection() as connection:
